@@ -84,7 +84,7 @@
                 "showSearch": false,
                 "searchQuery": "",
                 "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
+                "unlinkedCollapsed": false
               }
             }
           },
@@ -129,5 +129,8 @@
     "collapsed": true
   },
   "active": "729d0a776afe3185",
-  "lastOpenFiles": []
+  "lastOpenFiles": [
+    "git push.md",
+    "testing.md"
+  ]
 }
