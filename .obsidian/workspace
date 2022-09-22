@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "testing.md",
+            "file": "this-is-to-te.md",
             "mode": "source",
             "source": false
           }
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "testing.md",
+                "file": "this-is-to-te.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "testing.md",
+                "file": "this-is-to-te.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "testing.md"
+                "file": "this-is-to-te.md"
               }
             }
           }
@@ -130,8 +130,8 @@
   },
   "active": "729d0a776afe3185",
   "lastOpenFiles": [
-    "this-is-to-te.md",
     "testing.md",
+    "this-is-to-te.md",
     "git push.md"
   ]
 }
