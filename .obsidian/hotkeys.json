@@ -1,3 +1,11 @@
 {
-  "obsidian-git:push": []
+  "obsidian-git:push": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "S"
+    }
+  ]
 }
