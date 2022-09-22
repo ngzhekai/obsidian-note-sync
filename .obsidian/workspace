@@ -57,7 +57,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -128,7 +129,7 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "729d0a776afe3185",
+  "active": "6fbb013e07b3cf59",
   "lastOpenFiles": [
     "git push.md",
     "testing.md"
