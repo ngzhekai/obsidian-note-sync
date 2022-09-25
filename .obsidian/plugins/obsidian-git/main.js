@@ -19462,16 +19462,25 @@ var FileType;
 // src/ui/modals/generalModal.ts
 init_polyfill_buffer();
 var import_obsidian3 = __toModule(require("obsidian"));
+var generalModalConfigDefaults = {
+  options: [],
+  placeholder: "",
+  allowEmpty: false,
+  onlySelection: false,
+  initialValue: void 0
+};
 var GeneralModal = class extends import_obsidian3.SuggestModal {
-  constructor(app2, options, placeholder, allowEmpty = false, onlySelection = false) {
-    super(app2);
-    this.options = options;
-    this.allowEmpty = allowEmpty;
-    this.onlySelection = onlySelection;
-    this.setPlaceholder(placeholder);
+  constructor(config) {
+    super(app);
+    this.config = { ...generalModalConfigDefaults, ...config };
+    this.setPlaceholder(this.config.placeholder);
   }
   open() {
     super.open();
+    if (this.config.initialValue != void 0) {
+      this.inputEl.value = this.config.initialValue;
+      this.inputEl.dispatchEvent(new Event("input"));
+    }
     return new Promise((resolve) => {
       this.resolve = resolve;
     });
@@ -19479,7 +19488,7 @@ var GeneralModal = class extends import_obsidian3.SuggestModal {
   selectSuggestion(value, evt) {
     if (this.resolve) {
       let res;
-      if (this.allowEmpty && value === " ")
+      if (this.config.allowEmpty && value === " ")
         res = "";
       else if (value === "...")
         res = void 0;
@@ -19494,18 +19503,18 @@ var GeneralModal = class extends import_obsidian3.SuggestModal {
       this.resolve(void 0);
   }
   getSuggestions(query) {
-    if (this.onlySelection) {
-      return this.options;
-    } else if (this.allowEmpty) {
-      return [query.length > 0 ? query : " ", ...this.options];
+    if (this.config.onlySelection) {
+      return this.config.options;
+    } else if (this.config.allowEmpty) {
+      return [query.length > 0 ? query : " ", ...this.config.options];
     } else {
-      return [query.length > 0 ? query : "...", ...this.options];
+      return [query.length > 0 ? query : "...", ...this.config.options];
     }
   }
   renderSuggestion(value, el) {
-    el.innerText = value;
+    el.setText(value);
   }
-  onChooseSuggestion(item, _) {
+  onChooseSuggestion(item, evt) {
   }
 };
 
@@ -19524,26 +19533,13 @@ var worthWalking2 = (filepath, root) => {
 };
 function getNewLeaf(event) {
   let leaf;
-  if (!event) {
-    leaf = app.workspace.getLeaf(false);
-  } else {
-    if ((0, import_obsidian4.requireApiVersion)("0.16.0")) {
-      if (event.ctrlKey && event.altKey && event.shiftKey) {
-        leaf = app.workspace.getLeaf("window");
-      } else if (event.ctrlKey && event.altKey) {
-        leaf = app.workspace.getLeaf("split");
-      } else if (event.ctrlKey) {
-        leaf = app.workspace.getLeaf("tab");
-      } else {
-        leaf = app.workspace.getLeaf(false);
-      }
-    } else {
-      if (event.ctrlKey) {
-        leaf = app.workspace.getLeaf(true);
-      } else {
-        leaf = app.workspace.getLeaf(false);
-      }
+  if (event) {
+    if (event.button === 0 || event.button === 1) {
+      const type = import_obsidian4.Keymap.isModEvent(event);
+      leaf = app.workspace.getLeaf(type);
     }
+  } else {
+    leaf = app.workspace.getLeaf(false);
   }
   return leaf;
 }
@@ -19588,9 +19584,9 @@ var IsomorphicGit = class extends GitManager {
       },
       onAuthFailure: async () => {
         new import_obsidian5.Notice("Authentication failed. Please try with different credentials");
-        const username = await new GeneralModal(app, [], "Specify your username").open();
+        const username = await new GeneralModal({ placeholder: "Specify your username" }).open();
         if (username) {
-          const password = await new GeneralModal(app, [], "Specify your password/personal access token").open();
+          const password = await new GeneralModal({ placeholder: "Specify your password/personal access token" }).open();
           if (password) {
             this.plugin.settings.username = username;
             await this.plugin.saveSettings();
@@ -27327,7 +27323,10 @@ function create_if_block(ctx) {
       insert(target, div, anchor);
       ctx[11](div);
       if (!mounted) {
-        dispose = listen(div, "click", ctx[5]);
+        dispose = [
+          listen(div, "auxclick", ctx[5]),
+          listen(div, "click", ctx[5])
+        ];
         mounted = true;
       }
     },
@@ -27337,7 +27336,7 @@ function create_if_block(ctx) {
         detach(div);
       ctx[11](null);
       mounted = false;
-      dispose();
+      run_all(dispose);
     }
   };
 }
@@ -27417,6 +27416,7 @@ function create_fragment(ctx) {
       if (!mounted) {
         dispose = [
           listen(span0, "click", self2(ctx[7])),
+          listen(span0, "auxclick", self2(ctx[7])),
           listen(div0, "click", ctx[8]),
           listen(div1, "click", ctx[6]),
           listen(main, "mouseover", ctx[4]),
@@ -27483,9 +27483,11 @@ function instance($$self, $$props, $$invalidate) {
     }
   }
   function open(event) {
+    var _a2;
     const file = view.app.vault.getAbstractFileByPath(change.vault_path);
+    console.log(event);
     if (file instanceof import_obsidian18.TFile) {
-      getNewLeaf(event).openFile(file);
+      (_a2 = getNewLeaf(event)) === null || _a2 === void 0 ? void 0 : _a2.openFile(file);
     }
   }
   function stage() {
@@ -27494,7 +27496,8 @@ function instance($$self, $$props, $$invalidate) {
     });
   }
   function showDiff(event) {
-    getNewLeaf(event).setViewState({
+    var _a2;
+    (_a2 = getNewLeaf(event)) === null || _a2 === void 0 ? void 0 : _a2.setViewState({
       type: DIFF_VIEW_CONFIG.type,
       active: true,
       state: { file: change.path, staged: false }
@@ -27668,9 +27671,10 @@ function instance2($$self, $$props, $$invalidate) {
     }
   }
   function open(event) {
+    var _a2;
     const file = view.app.vault.getAbstractFileByPath(change.vault_path);
     if (file instanceof import_obsidian19.TFile) {
-      getNewLeaf(event).openFile(file);
+      (_a2 = getNewLeaf(event)) === null || _a2 === void 0 ? void 0 : _a2.openFile(file);
     }
   }
   function focus_handler(event) {
@@ -27864,13 +27868,15 @@ function instance3($$self, $$props, $$invalidate) {
     }
   }
   function open(event) {
+    var _a2;
     const file = view.app.vault.getAbstractFileByPath(change.vault_path);
     if (file instanceof import_obsidian20.TFile) {
-      getNewLeaf(event).openFile(file);
+      (_a2 = getNewLeaf(event)) === null || _a2 === void 0 ? void 0 : _a2.openFile(file);
     }
   }
   function showDiff(event) {
-    getNewLeaf(event).setViewState({
+    var _a2;
+    (_a2 = getNewLeaf(event)) === null || _a2 === void 0 ? void 0 : _a2.setViewState({
       type: DIFF_VIEW_CONFIG.type,
       active: true,
       state: { file: change.path, staged: true }
@@ -30125,11 +30131,12 @@ var ObsidianGit = class extends import_obsidian23.Plugin {
       id: "open-diff-view",
       name: "Open diff view",
       checkCallback: (checking) => {
+        var _a2;
         const file = this.app.workspace.getActiveFile();
         if (checking) {
           return file !== null;
         } else {
-          getNewLeaf().setViewState({ type: DIFF_VIEW_CONFIG.type, state: { staged: false, file: file.path } });
+          (_a2 = getNewLeaf()) == null ? void 0 : _a2.setViewState({ type: DIFF_VIEW_CONFIG.type, state: { staged: false, file: file.path } });
         }
       }
     });
@@ -30245,7 +30252,7 @@ var ObsidianGit = class extends import_obsidian23.Plugin {
       callback: async () => {
         const repoExists = await this.app.vault.adapter.exists(`${this.settings.basePath}/.git`);
         if (repoExists) {
-          const modal = new GeneralModal(this.app, ["NO", "YES"], "Do you really want to delete the repository (.git directory)? This action cannot be undone.", false, true);
+          const modal = new GeneralModal({ options: ["NO", "YES"], placeholder: "Do you really want to delete the repository (.git directory)? This action cannot be undone.", onlySelection: true });
           const shouldDelete = await modal.open() === "YES";
           if (shouldDelete) {
             await this.app.vault.adapter.rmdir(`${this.settings.basePath}/.git`, true);
@@ -30410,8 +30417,6 @@ var ObsidianGit = class extends import_obsidian23.Plugin {
   }
   async onunload() {
     this.app.workspace.unregisterHoverLinkSource(GIT_VIEW_CONFIG.type);
-    this.app.workspace.detachLeavesOfType(GIT_VIEW_CONFIG.type);
-    this.app.workspace.detachLeavesOfType(DIFF_VIEW_CONFIG.type);
     this.unloadPlugin();
     console.log("unloading " + this.manifest.name + " plugin");
   }
@@ -30515,11 +30520,15 @@ var ObsidianGit = class extends import_obsidian23.Plugin {
     await this.init();
   }
   async cloneNewRepo() {
-    const modal = new GeneralModal(this.app, [], "Enter remote URL");
+    const modal = new GeneralModal({ placeholder: "Enter remote URL" });
     const url = await modal.open();
     if (url) {
       const confirmOption = "Vault Root";
-      let dir = await new GeneralModal(this.app, [confirmOption], "Enter directory for clone. It needs to be empty or not existent.", this.gitManager instanceof IsomorphicGit).open();
+      let dir = await new GeneralModal({
+        options: [confirmOption],
+        placeholder: "Enter directory for clone. It needs to be empty or not existent.",
+        allowEmpty: this.gitManager instanceof IsomorphicGit
+      }).open();
       if (dir !== void 0) {
         if (dir === confirmOption) {
           dir = ".";
@@ -30529,14 +30538,14 @@ var ObsidianGit = class extends import_obsidian23.Plugin {
           dir = ".";
         }
         if (dir === ".") {
-          const modal2 = new GeneralModal(this.app, ["NO", "YES"], `Does your remote repo contain a ${app.vault.configDir} directory at the root?`, false, true);
+          const modal2 = new GeneralModal({ options: ["NO", "YES"], placeholder: `Does your remote repo contain a ${app.vault.configDir} directory at the root?`, onlySelection: true });
           const containsConflictDir = await modal2.open();
           if (containsConflictDir === void 0) {
             new import_obsidian23.Notice("Aborted clone");
             return;
           } else if (containsConflictDir === "YES") {
             const confirmOption2 = "DELETE ALL YOUR LOCAL CONFIG AND PLUGINS";
-            const modal3 = new GeneralModal(this.app, ["Abort clone", confirmOption2], `To avoid conflicts, the local ${app.vault.configDir} directory needs to be deleted.`, false, true);
+            const modal3 = new GeneralModal({ options: ["Abort clone", confirmOption2], placeholder: `To avoid conflicts, the local ${app.vault.configDir} directory needs to be deleted.`, onlySelection: true });
             const shouldDelete = await modal3.open() === confirmOption2;
             if (shouldDelete) {
               await this.app.vault.adapter.rmdir(app.vault.configDir, true);
@@ -30778,7 +30787,7 @@ var ObsidianGit = class extends import_obsidian23.Plugin {
     var _a2;
     if (!await this.isAllInitialized())
       return;
-    const newBranch = await new GeneralModal(app, [], "Create new branch", false).open();
+    const newBranch = await new GeneralModal({ placeholder: "Create new branch" }).open();
     if (newBranch != void 0) {
       await this.gitManager.createBranch(newBranch);
       this.displayMessage(`Created new branch ${newBranch}`);
@@ -30793,11 +30802,11 @@ var ObsidianGit = class extends import_obsidian23.Plugin {
     const branchInfo = await this.gitManager.branchInfo();
     if (branchInfo.current)
       branchInfo.branches.remove(branchInfo.current);
-    const branch2 = await new GeneralModal(app, branchInfo.branches, "Delete branch", false, true).open();
+    const branch2 = await new GeneralModal({ options: branchInfo.branches, placeholder: "Delete branch", onlySelection: true }).open();
     if (branch2 != void 0) {
       let force = false;
       if (!await this.gitManager.branchIsMerged(branch2)) {
-        const forceAnswer = await new GeneralModal(app, ["YES", "NO"], "This branch isn't merged into HEAD. Force delete?", false, true).open();
+        const forceAnswer = await new GeneralModal({ options: ["YES", "NO"], placeholder: "This branch isn't merged into HEAD. Force delete?", onlySelection: true }).open();
         if (forceAnswer !== "YES") {
           return;
         }
@@ -30922,10 +30931,14 @@ var ObsidianGit = class extends import_obsidian23.Plugin {
     if (!await this.isAllInitialized())
       return;
     const remotes = await this.gitManager.getRemotes();
-    const nameModal = new GeneralModal(this.app, remotes, "Select or create a new remote by typing its name and selecting it");
+    const nameModal = new GeneralModal({
+      options: remotes,
+      placeholder: "Select or create a new remote by typing its name and selecting it"
+    });
     const remoteName = await nameModal.open();
     if (remoteName) {
-      const urlModal = new GeneralModal(this.app, [], "Enter the remote URL");
+      const oldUrl = await this.gitManager.getRemoteUrl(remoteName);
+      const urlModal = new GeneralModal({ initialValue: oldUrl });
       const remoteURL = await urlModal.open();
       if (remoteURL) {
         await this.gitManager.setRemote(remoteName, remoteURL);
@@ -30942,13 +30955,13 @@ var ObsidianGit = class extends import_obsidian23.Plugin {
         remotes = await this.gitManager.getRemotes();
       }
     }
-    const nameModal = new GeneralModal(this.app, remotes, "Select or create a new remote by typing its name and selecting it");
+    const nameModal = new GeneralModal({ options: remotes, placeholder: "Select or create a new remote by typing its name and selecting it" });
     const remoteName = selectedRemote != null ? selectedRemote : await nameModal.open();
     if (remoteName) {
       this.displayMessage("Fetching remote branches");
       await this.gitManager.fetch(remoteName);
       const branches = await this.gitManager.getRemoteBranches(remoteName);
-      const branchModal = new GeneralModal(this.app, branches, "Select or create a new remote branch by typing its name and selecting it");
+      const branchModal = new GeneralModal({ options: branches, placeholder: "Select or create a new remote branch by typing its name and selecting it" });
       return await branchModal.open();
     }
   }
@@ -30956,7 +30969,7 @@ var ObsidianGit = class extends import_obsidian23.Plugin {
     if (!await this.isAllInitialized())
       return;
     const remotes = await this.gitManager.getRemotes();
-    const nameModal = new GeneralModal(this.app, remotes, "Select a remote");
+    const nameModal = new GeneralModal({ options: remotes, placeholder: "Select a remote" });
     const remoteName = await nameModal.open();
     if (remoteName) {
       this.gitManager.removeRemote(remoteName);
