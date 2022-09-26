@@ -61,8 +61,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "3a4452d972b1952e",
@@ -129,7 +128,7 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "c91f7b23d0a35e56",
+  "active": "014d2c0fe4e89160",
   "lastOpenFiles": [
     "T TP3121/img/TTP3121-Lec1-TCP&IP-Architecture1.jpg",
     "T TP3121/Lecture 1.md",

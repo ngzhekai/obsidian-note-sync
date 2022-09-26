@@ -1,4 +1,7 @@
+# T TP31 Lecture 1 
 ## TCP/IP ARCHITECTURE
+---
+
 ![Difference Between OSI and TCP/IP  Layers](./img/TTP3121-Lec1-TCP&IP-Architecture1.jpg)
 
 |    | TCP/IP Layers                | OSI Model Layers (Equivalent to) |
