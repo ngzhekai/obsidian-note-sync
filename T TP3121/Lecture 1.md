@@ -11,7 +11,7 @@
 |    |                              |                                  |
 | 3. | Internet Layer               | Network Layer                    |
 |    |                              |                                  |
-| 4. | Network Interface Layer      | Data-Link Layer                  | 
+| 4. | Network Interface Layer      | Data-Link Layer                  |
 |    |                              | Physical Layer                   | 
 
 ---
@@ -21,7 +21,7 @@
 ---
 
 ## TCP (Transmission Control Protocol)
->1.  **Connection Oriented** transport protocol.
+>1.  **Connection Oriented** transport protocol. Includes features such as **acknowledgements**, **timeouts**, **re-transmissions**, **end-to-end flow control**, etc.
 >
 >2. **TCP** is a guaranteed method of transferring data (aka packets), where no data loss will be tolerated, the 3-Way Handshake mechanism take action between the Client and the Server.
 >
@@ -29,9 +29,10 @@
 
 
 ## UDP (User Datagram Protocol)
->1. **Connection-less** transport protocol.
+>1. **Connection-less** transport protocol. **UDP** lack all TCP features (acknowledgement, timeouts, re-transmissions, end-to-end flow control, etc) therefore it does not guarantee packet delivery.
 >
->2. UDP is a method of transferring data which allows partially of the data to be lost, for example,  Live Stream on YouTube
+>2. **UDP** is a method of transferring data which allows partially of the data to be lost, for example,  Live Stream on YouTube
+
 
 ---
 
