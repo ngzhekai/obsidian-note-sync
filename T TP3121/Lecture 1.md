@@ -1,21 +1,18 @@
 ## TCP/IP ARCHITECTURE
 ![Difference Between OSI and TCP/IP  Layers](./img/TTP3121-Lec1-TCP&IP-Architecture1.jpg)
 
-| | TCP/IP Layers  | Equivalent to OSI Model Layers |
-| ----- | :----- | :----- |
-| 1. | Application Layer | Application Layer |
-| 2. | Presentation Layer | 
-
-
-
-
-
-
-
-1. Network Interface Layer
-2. Internet Layer
-3. Host-to-Host Transport Layer
-4. Application Layer
+|    | TCP/IP Layers                | OSI Model Layers (Equivalent to) |
+| -- | :-----                       | :-----                           |
+| 1. | Application Layer            | Application Layer                |
+|    |                              | Presentation Layer               |
+|    |                              | Session Layer                    |
+|    |                              |                                  |
+| 2. | Host-to-Host Transport Layer | Transport Layer                  |
+|    |                              |                                  |
+| 3. | Internet Layer               | Network Layer                    |
+|    |                              |                                  |
+| 4. | Network Interface Layer      | Data-Link Layer                  | 
+|    |                              | Physical Layer                   | 
 
 ---
 
