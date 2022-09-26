@@ -61,7 +61,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "3a4452d972b1952e",
@@ -128,7 +129,7 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "c91f7b23d0a35e56",
+  "active": "c6f431ab117c6f0e",
   "lastOpenFiles": [
     "testing-for.md",
     "testing.md",
