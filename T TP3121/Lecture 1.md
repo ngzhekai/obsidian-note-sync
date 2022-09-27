@@ -35,9 +35,9 @@
 ## UDP (User Datagram Protocol)
 >1. **Connection-less** transport protocol. **UDP** lack all TCP features (acknowledgement, timeouts, re-transmissions, end-to-end flow control, etc) therefore it does not guarantee packet delivery.
 >
->2. **UDP** is a method of transferring data which allows partially of the data to be lost, for example,  Live Stream on YouTube. Unlike TCP, packets doesn't come in order.
+>2. **UDP** is a method of transferring data which allows partially of the data to be lost, for example,  Live Stream on YouTube. Unlike TCP, packets doesn't come in order, and are more likely to have missing packets during the transmission.
 >
->3. Able to transfer packets **faster** than TCP.
+>3. **Advantage**: Able to transfer packets **faster** than TCP.
 
 
 ---
