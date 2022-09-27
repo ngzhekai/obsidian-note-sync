@@ -25,9 +25,9 @@
 ---
 
 ## TCP (Transmission Control Protocol)
->1.  **Connection Oriented** transport protocol. Includes features such as **acknowledgements**, **timeouts**, **re-transmissions**, **end-to-end flow control**, etc.
+>1.  **Connection Oriented** transport protocol. Includes features such as **acknowledgements**, **timeouts**, **re-transmissions**, **end-to-end flow control**, etc. 
 >
->2. **TCP** is a guaranteed method of transferring data (aka packets), where no data loss will be tolerated, the 3-Way Handshake mechanism take action between the Client and the Server.
+>2. **TCP** is a guaranteed method of transferring data (aka packets), where no data loss will be tolerated, the 3-Way Handshake mechanism take action between the Client and the Server. Most importantly, packets arrived in the right order where it should be receiving.
 >
 >3.  **TCP** and **IP** are used together so often, in short the responsibility of IP protocol was to make sure that the packet reaches the right destination, and while the TCP protocol make sure that packets (or data) are not lost when transferring from the sender to the receiver.
 
@@ -35,7 +35,9 @@
 ## UDP (User Datagram Protocol)
 >1. **Connection-less** transport protocol. **UDP** lack all TCP features (acknowledgement, timeouts, re-transmissions, end-to-end flow control, etc) therefore it does not guarantee packet delivery.
 >
->2. **UDP** is a method of transferring data which allows partially of the data to be lost, for example,  Live Stream on YouTube
+>2. **UDP** is a method of transferring data which allows partially of the data to be lost, for example,  Live Stream on YouTube. Unlike TCP, packets doesn't come in order.
+>
+>3. Able to transfer packets **faster** than TCP.
 
 
 ---
