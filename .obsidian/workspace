@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "T TP3121/Lecture 1.md",
+            "file": "T CP3151/Lecture 1.md",
             "mode": "source",
             "source": false
           }
@@ -61,7 +61,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "3a4452d972b1952e",
@@ -77,7 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "T TP3121/Lecture 1.md",
+                "file": "T CP3151/Lecture 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +95,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "T TP3121/Lecture 1.md",
+                "file": "T CP3151/Lecture 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +118,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "T TP3121/Lecture 1.md"
+                "file": "T CP3151/Lecture 1.md"
               }
             }
           }
@@ -130,14 +131,15 @@
   },
   "active": "014d2c0fe4e89160",
   "lastOpenFiles": [
-    "T TP3121/img/TTP3121-Lec1-TCP&IP-Architecture1.jpg",
+    "T CC3141/Lab 1.md",
+    "T CP3151/Lecture 1.md",
     "T TP3121/Lecture 1.md",
+    "T TP3121/img/TTP3121-Lec1-TCP&IP-Architecture1.jpg",
     "img/TTP3121-Lec1-TCP&IP-Architecture.png.md",
     "T TP3121/img/TTP3121-Lec1-TCP&IP-Architecture.png",
     "testing-for.md",
     "testing.md",
     "this-is-to-te.md",
-    "2022-09-23.md",
-    "git push.md"
+    "2022-09-23.md"
   ]
 }
