@@ -28,15 +28,12 @@
 ---
 
 ### Three Categories of Mobile apps
-
-![Native and Hybrid Apps Comparison](./img/TCP3151-Lec1-native-and-hybrid-comparison.png)
+![Detailed Native and Hybrid Apps Comparison](./img/TCP3151-Lec1-detailed-native-and-hybrid-compare.png)
 
 | Type of App | Description |
-|:-----------:|:-----------|
+|:----------- |:----------- |
 | Web         | Hosted on web browser, which in fact is a websites. Support multi-platform,and low development cost. |
 | Native      | Built using platform-specific software development tool provided by the mobile OS, which can fully utilise the mobile API. App support on the specified OS ONLY.            |
 | Hybrid      | Combines native development with web app technology by using native wrapper with limited API access. Somehow similar to Discord. Worse performance `than Native app`            |
 
-
-
-![](./img/TCP3151-Lec1-detailed-native-and-hybrid-compare.png)
+![Native and Hybrid Apps Comparison](./img/TCP3151-Lec1-native-and-hybrid-comparison.png)
