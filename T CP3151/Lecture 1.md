@@ -14,14 +14,28 @@
 |||
 | **Translate Method** |A compiler translate the entire code in one shot  | Translate only a single instruction at a time |
 |||
-| **Intermediate** **Codes**| Generate machine code (binary file such as `.exe`| Never produce intermediate machine code |
-|||
-| **Debug** | Debugging is difficult (slow) | Debugging is easier (quick) |
+| **Intermediate** **Codes**| Generate machine code (binary file such as `.exe`, hence requires more memory| Never produce intermediate machine code, hence are memory efficient |
 |||
 | **Speed** | Faster Execution | Slower Execution | 
 |||
-| **Error** | All Errors are displayed after entire program is checked | Error are displayed for every instruction interpreted |
+| **Error** | All Errors are displayed after entire program is checked | Error are displayed for every instruction interpreted (if any) which stops |
+|||
+| **Debug** | Debugging is very difficult (slow) | Debugging is easier (quick) |
 |||
 | **Examples** | C/C++, JAVA, Objective-C | Python, PHP, JavaScript |
 > Table 1 . Difference between Compiler and Interpreter
 
+---
+
+### Three Categories of Mobile apps
+| Type of App | Description |
+|:-----------:|:-----------|
+| Web         | Hosted on web browser, which in fact is a websites. Support multi-platform,and low development cost. |
+| Native      | Built using platform-specific software development tool provided by the mobile OS, which can fully utilise the mobile API. App support on the specified OS ONLY.            |
+| Hybrid      | Combines native development with web app technology by using native wrapper with limited API access. Somehow similar to Discord. Worse performance `than Native app`            |
+
+![Native and Hybrid Apps Comparison](./img/TCP3151-Lec1-native-and-hybrid-comparison.png)
+
+1. Native app
+2. Web app
+3. Hybrid app
