@@ -37,3 +37,15 @@
 | Hybrid      | Combines native development with web app technology by using native wrapper with limited API access. Somehow similar to Discord. Worse performance `than Native app`            |
 
 ![Native and Hybrid Apps Comparison](./img/TCP3151-Lec1-native-and-hybrid-comparison.png)
+
+---
+### Java Native Interface (JNI)
+
+A standard Java Mechanism that allow Java code to interact with C and C++ code.
+
+![How JNI Works](./img/TCP3151-Lec1-jni-java-c-interaction.png)
+
+It is a framework/ native programming interface, which allows Java code that runs inside a Java Virtual Machine (JVM) to interoperate with applications and libraries written in other programming languages, such as C/C++, and assembly.
+
+More detailed information can be found [here](https://redwerk.com/blog/3-reasons-why-we-love-jni/)
+
