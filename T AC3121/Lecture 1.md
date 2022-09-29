@@ -31,6 +31,9 @@
 - rely on one key to both `encrypt` and `decrypt`
 - think of it like a traditional house door key, to unlock/lock it requires the common key.
 
+### Private-Key Encryption Model
+![](./img/TAC3121-Lec1-private-key-encryption-diagram.png)
+
 #### Asymmetric Cryptography (Public-Key)
 - Involves the use of two keys:
 	- public-key - the recipient public key can be known by anyone and is used to encrypt the messages by the sender, and verify signatures.
