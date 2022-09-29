@@ -45,9 +45,19 @@
 | Hybrid Cloud | A combination of two or more of the above cloud models. For example, an enterprise make use of both public and private clouds - thus deploying business-critical core application on the internal private cloud, and less critical services on a public cloud. |
 
 ### Benefits of *Cloud Computing*
-- lower operational and service cost to users - `pay-per-usage` model
-- on-demand scalability to meet peak and uncertain computing demands
-- shared access to data
-- freedom to use
+- **lower operational and service cost** to users - `pay-per-usage` model
+- **on-demand scalability** to meet peak and uncertain computing demands
+- **improved flexibility** - shared access to data/application-supporting collaboration and teamwork
+- **greater data safety** especially to enterprises in disaster-prone areas
+- **quicker application deployment**
+- **freedom to use a vast array of computational resources** on the cloud
+
+### Limitations of *Cloud Computing*
+- Requires reliable, always-available **high-speed network access**
+- **Possibilities of slow response at times** due to increased traffic or higher load on computers in the cloud
+- **Additional vulnerabilities** to security of data and processes on clouds
+- **Risk of unauthorised access** to users' data (masquerade)
+- **Loss of data** due to cloud failure
+- **Reliability and continued availability of services** offered by cloud service providers
 
 All the information listed here can be found from [here](./img/TCC3141-Week1-IntrotoCloudComputing.pdf).
