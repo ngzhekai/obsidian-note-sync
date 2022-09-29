@@ -1,3 +1,11 @@
 # Introduction to Cloud Computing
 
-<iframe width="100%" height="800" src="./img/TCC3141-Week1-IntrotoCloudComputing.pdf"></iframe>
+## Three Cloud Service Models
+	- Software as a Service (SaaS)
+	- Platform as a Service (PaaS)
+	- Infrastructure as a Service (IaaS)
+
+
+
+
+All the information are extracted from [here](./img/TCC3141-Week1-IntrotoCloudComputing.pdf).
