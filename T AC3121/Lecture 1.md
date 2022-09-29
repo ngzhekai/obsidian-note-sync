@@ -7,6 +7,42 @@
 |||
 | Intelligible  | can be known as meaningful or capable of being understood | 
 
-## Kerchoffs' Principle
+### Basic Terminology
+| Term | Description |
+| :--- | :---------- |
+| Plaintext | original message |
+| Ciphertext | encrypted message |
+| Cipher / Cryptographic System | pair of algorithms for transforming plaintext to ciphertext and ciphertext back to plaintext. |
+| Key | info used in cipher that are known only to `Sender/Receiver` |
+| Encrypt | the process of converting plaintext to ciphertext |
+| Decrypt | the process of recovering plaintext from ciphertext |
+
+## Kerckhoffs' Principle
 ![](./img/TAC3121-Lec1-kerchoff-principles.jpg)
 > Everything can be made public (including the algorithms) except the `private key`.
+
+---
+### Cryptography is broadly classified into two categories:
+1. Symmetric / Private-Key Cryptography
+2. Asymmetric Key Cryptography / Public-Key Cryptography
+
+#### Symmetric Cryptography (Private-Key)
+- both the `Sender` and `Recipient` share a common key, `private key`
+- rely on one key to both `encrypt` and `decrypt`
+- think of it like a traditional house door key, to unlock/lock it requires the common key.
+
+#### Asymmetric Cryptography (Public-Key)
+- Involves the use of two keys:
+	- public-key - the recipient public key can be known by anyone and is used to encrypt the messages by the sender, and verify signatures.
+	- private-key - only known to the recipient, and is used to decrypt the ciphertext and sign signature.
+- Therefore the `Sender` who encrypt messages or verify signatures **cannot** decrypt messages or create signatures.
+
+### Public-Key Encryption Model
+![](./img/TAC3121-Lec1-public-key-encryption-diagram.png)
+
+### Authentication using Public-Key System (Digital Signature) 
+![](./img/TAC3121-Lec1-authentication-using-public-key-system-diagram.png)
+
+
+
+
