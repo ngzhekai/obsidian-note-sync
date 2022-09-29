@@ -1,9 +1,9 @@
 # Introduction to Cloud Computing
 
 ### Three Types Cloud Service Models
-- Software as a Service (SaaS)
-- Platform as a Service (PaaS)
-- Infrastructure as a Service (IaaS)
+- `Software as a Service (SaaS)
+- `Platform as a Service (PaaS)
+- `Infrastructure as a Service (IaaS)
 
 
 
