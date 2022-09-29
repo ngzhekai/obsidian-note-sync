@@ -27,7 +27,7 @@
 - `Platform as a Service (PaaS)`
 - `Infrastructure as a Service (IaaS)`
 
-
+![](./img/TCC3141-Lec1-cloud-service-models.png)
 
 
 All the information listed here can be found from [here](./img/TCC3141-Week1-IntrotoCloudComputing.pdf).
