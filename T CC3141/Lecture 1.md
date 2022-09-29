@@ -1,7 +1,9 @@
 # Introduction to Cloud Computing
 
 ### NIST Definition of the term `Cloud Computing` 
-`Cloud computing is a model for enabling ubiquitous, convenient, on-demand network access to a shared pool of configurable computing resources (e.g., networks, servers, storage, applications, and services) that can be rapidly provisioned and realeased with minimal management effort or service provider interaction.`
+> Cloud computing is a model for enabling ubiquitous, convenient, on-demand network access to a shared pool of configurable computing resources (e.g., networks, servers, storage, applications, and services) that can be rapidly provisioned and released with minimal management effort or service provider interaction.`
+
+### ISO Definition of the term `Cloud Computing`
 
 ### Three Major Categories of Cloud Service Models
 - `Software as a Service (SaaS)`
