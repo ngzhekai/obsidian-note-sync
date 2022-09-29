@@ -42,7 +42,3 @@
 
 ### Authentication using Public-Key System (Digital Signature) 
 ![](./img/TAC3121-Lec1-authentication-using-public-key-system-diagram.png)
-
-
-
-
