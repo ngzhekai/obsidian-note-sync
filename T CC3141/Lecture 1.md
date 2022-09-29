@@ -19,6 +19,9 @@
 | Measured service | Automatically control and optimise resource use by leveraging a metering capability at some level of abstraction appropriate to the type of service (e.g., storage, processing, bandwidth, and active user accounts). |
 | Multi-tenancy | A shared resource that draws on resource pooling as an important feature. It implies use of same resources by multiple consumers, called tenants.
 
+### Definition
+> **Ubiquitous access** = capable of being able to access anywhere and anytime.
+
 ### Three Major Categories of Cloud Service Models
 - `Software as a Service (SaaS)`
 - `Platform as a Service (PaaS)`
