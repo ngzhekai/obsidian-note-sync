@@ -27,7 +27,27 @@
 - `Platform as a Service (PaaS)`
 - `Infrastructure as a Service (IaaS)`
 
+| Cloud Service Models | Description |
+| :------------------- | :---------- |
+| Software as a Service | An application hosted by a cloud vendor and delivered as a service to users. It eliminates the hassle to install and run the application locally.|
+| Platform as a Service | The platform and tools for application development and middle-ware systems are hosted by a vendor and offered to application developers, allowing them simply to code and deploy without directly interacting with the underlying infrastructure. |
+| Infrastructure as a Service | Outsource raw computer infrastructure (e.g., servers, CPU, storage, network equipment) to client for the duration that they need them. |
+
 ![](./img/TCC3141-Lec1-cloud-service-models.png)
 
+### Five Categories of *Cloud Models*
+| Type of Cloud | Description |
+| :------------ | :---------- |
+| Public Cloud | Most common and widely known form of cloud, and is open for anyone (business, industry, government, nonprofit organisations and individuals - to use.) Cloud infrastructure are owned and managed by the cloud service provider.|
+| Private Cloud | Cloud deployed, provided, and controlled by an enterprise behind its firewall for its own use.
+| Virtual Private Cloud | A secure, isolated private cloud hosted within a public cloud. The customer can do anything else they would do in the private cloud, however the Virtual Private Cloud (VPC) is hosted remotely by a public cloud provider. A perfect example will be MMLS. |
+| Community Cloud | An industry cloud or vertical cloud. It is optimised and specially deployed for use by a particular industry sector. |
+| Hybrid Cloud | A combination of two or more of the above cloud models. For example, an enterprise make use of both public and private clouds - thus deploying business-critical core application on the internal private cloud, and less critical services on a public cloud. |
+
+### Benefits of *Cloud Computing*
+- lower operational and service cost to users - `pay-per-usage` model
+- on-demand scalability to meet peak and uncertain computing demands
+- shared access to data
+- freedom to use
 
 All the information listed here can be found from [here](./img/TCC3141-Week1-IntrotoCloudComputing.pdf).
