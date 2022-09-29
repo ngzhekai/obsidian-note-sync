@@ -1,7 +1,6 @@
 # Introduction to Integrative Programming
 
 ## Difference between Compiler and Interpreter
----
 1. A **Compiler** will scan and translate source codes in whole (such as C/C++, JAVA, Objective-C language) into machine language (binary number such as `0` and `1`) which will generate an `.exe` file at the end of compiling.
 
 2. **Compiler** takes time to analyse the source codes (such as C/C++, JAVA, Objective-C language). It generates all the errors at the end of compilation, making debugging difficult. However, the time taken to execute the process is much quicker than Interpreter.
