@@ -36,7 +36,7 @@
 ![](./img/TCC3141-Lec1-cloud-service-models.png)
 
 ### Five Categories of *Cloud Models*
-| Type of Cloud | Description |
+| Cloud Model | Description |
 | :------------ | :---------- |
 | Public Cloud | Most common and widely known form of cloud, and is open for anyone (business, industry, government, nonprofit organisations and individuals - to use.) Cloud infrastructure are owned and managed by the cloud service provider.|
 | Private Cloud | Cloud deployed, provided, and controlled by an enterprise behind its firewall for its own use.
