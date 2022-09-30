@@ -45,3 +45,10 @@
 
 ### Authentication using Public-Key System (Digital Signature) 
 ![](./img/TAC3121-Lec1-authentication-using-public-key-system-diagram.png)
+
+### Unconditional Secure Cipher
+> Even having unlimited computer power and time, the secure ciphertext still cannot be broken (decrypt); Since the ciphertext itself does not provide sufficient information to uniquely determine the corresponding plaintext.
+
+### Computational Secure Cipher
+> Given that the current computing resources (which are limited), the ciphertext cannot be broken due to the time needed to decrypt the ciphertext outweigh the content of the message.
+
