@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "014d2c0fe4e89160",
+        "id": "d4556c02e2d7824e",
         "type": "leaf",
         "state": {
           "type": "markdown",
@@ -128,17 +128,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "c91f7b23d0a35e56",
+  "active": "d4556c02e2d7824e",
   "lastOpenFiles": [
-    "T CP3151/Lecture 1.md",
+    "conflict-files-obsidian-git.md",
     "T AC3121/Lecture 1.md",
+    "testing.md",
+    "T CP3151/Lecture 1.md",
     "T CC3141/Lab 1.md",
     "T CC3141/Lecture 1.md",
     "T CC3141/img/TCC3141-Lec1-cloud-service-models.png",
     "T CC3141/img/TCC3141-Week1-IntrotoCloudComputing.pdf",
     "T CP3151/img/TCP3151-Lec1-native-and-hybrid-comparison.png",
-    "T TP3121/Lecture 1.md",
-    "T TP3121/img/TTP3121-Lec1-TCP&IP-Architecture1.jpg",
-    "img/TTP3121-Lec1-TCP&IP-Architecture.png.md"
+    "T TP3121/Lecture 1.md"
   ]
 }
