@@ -30,5 +30,12 @@
 
  Given that the current computing resources (which are limited), the ciphertext cannot be broken due to the time needed to decrypt the ciphertext outweigh the content of the message.
 
-## Feistel Cipher Structure
+## Feistel Cipher
+
+Feistel cipher is a design model or structure used to build various symmetric block ciphers, such as `DES`. This design model can have invertible, non-invertible, and self-invertible components. Additionally, the Feistel block cipher uses the same encryption and decryption algorithms.
+
+The Feister cipher proposed the structure that implements substitution and permutation alternately. Substitution replaces plain text elements with ciphertext. Permutation changes the order of the plain text elements rather than being replaced by another element as done with substitution.
+
+
+
 

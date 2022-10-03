@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "d4556c02e2d7824e",
+        "id": "7a88b12720788dce",
         "type": "leaf",
         "state": {
           "type": "markdown",
@@ -128,10 +128,10 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "d4556c02e2d7824e",
+  "active": "7a88b12720788dce",
   "lastOpenFiles": [
-    "T AC3121/Lecture 1.md",
     "T NS3131/Lecture 2.md",
+    "T AC3121/Lecture 1.md",
     "T CP3151/Lecture 1.md",
     "conflict-files-obsidian-git.md",
     "testing.md",
