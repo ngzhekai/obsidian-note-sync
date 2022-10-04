@@ -32,3 +32,13 @@ A set of "numbers". Having two operations (addition and multiplication) which fo
 	* distributive over addition: ***a(b+c) = ab + ac***
 * If multiplication operation is commutative, it forms a **commutative ring**
 * If multiplication operation has an identity and no zero divisors, it forms an **integral domain**
+
+### Field
+
+A set of numbers. Having two operations which form:
+* abelian group for addition
+* abelia group for multiplication (ignoring 0)
+* ring
+
+Have hierarchy with more axioms/laws
+* group -> ring -> field
