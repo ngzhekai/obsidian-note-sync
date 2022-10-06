@@ -32,7 +32,7 @@
 - think of it like a traditional house door key, to unlock/lock it requires the common key.
 
 ### Private-Key Encryption Model
-![](./img/TAC3121-Lec1-private-key-encryption-diagram.png)
+![](./img/TAC3121-Lec1-private-key-encryption-diagram-2.png)
 
 #### Asymmetric Cryptography (Public-Key)
 - Involves the use of two keys:

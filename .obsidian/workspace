@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "T AC3121/Lecture 2.md",
+            "file": "T AC3121/Lecture 1.md",
             "mode": "source",
             "source": false
           }
@@ -78,7 +78,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "T AC3121/Lecture 2.md",
+                "file": "T AC3121/Lecture 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,7 +95,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "T AC3121/Lecture 2.md",
+                "file": "T AC3121/Lecture 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +118,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "T AC3121/Lecture 2.md"
+                "file": "T AC3121/Lecture 1.md"
               }
             }
           }
@@ -131,6 +131,7 @@
   },
   "active": "7a88b12720788dce",
   "lastOpenFiles": [
+    "T AC3121/Lecture 2.md",
     "T NS3131/Lecture 2.md",
     "T AC3121/Lecture 1.md",
     "T CP3151/Lecture 1.md",
@@ -139,7 +140,6 @@
     "T CC3141/Lab 1.md",
     "T CC3141/Lecture 1.md",
     "T CC3141/img/TCC3141-Lec1-cloud-service-models.png",
-    "T CC3141/img/TCC3141-Week1-IntrotoCloudComputing.pdf",
-    "T CP3151/img/TCP3151-Lec1-native-and-hybrid-comparison.png"
+    "T CC3141/img/TCC3141-Week1-IntrotoCloudComputing.pdf"
   ]
 }
