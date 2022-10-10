@@ -21,3 +21,4 @@
 
 A broad term that refers to the abstraction of computing resources, a technique for hiding the physical characteristics of computing resources (CPU, memory, disk and network interfaces) from the way in which other systems, applications, or end users interact with those resources. 
 > Virtualisation creates an external interface that hides an underlying implementation by combining resources at different physical locations or by simplifying a control system.
+
