@@ -17,6 +17,16 @@
 | Encrypt | the process of converting plaintext to ciphertext |
 | Decrypt | the process of recovering plaintext from ciphertext |
 
+### Cryptanalytic Attacks
+
+| Term | Description |
+| :--- | :---------- |
+|  Ciphertext only | Only know algorithm & ciphertext, is statistical, know or can identify plaintext |
+| Known plaintext | Know/suspect plaintext & ciphertext to attack cipher |
+| Chosen plaintext | Select plaintext and obtain ciphertext to attack cipher |
+| Chosen ciphertext | Select ciphertext and obtain plaintext to attack cipher |
+| Chosen text | Select plaintext or ciphertext to en/decrypt to attack cipher |
+
 ## Kerckhoffs' Principle
 ![](./img/TAC3121-Lec1-kerchoff-principles.jpg)
 > Everything can be made public (including the algorithms) except the `private key`.
