@@ -2,6 +2,9 @@
 
 The basics of XSLT is to create templates that match the nodes in the structure.
 
++ When XSLT processes a document, it recursively traverses the entire document hierarchy, inspecting each node, looking for a template that matches the current node.
++ When a matching template is found, the contents of that template are evaluated.
+
 ### Two type of templates:
  + Match (Unnamed) Templates
  + Named Templates
@@ -62,10 +65,8 @@ The basics of XSLT is to create templates that match the nodes in the structure.
 ```
 
 ![Example of Named Template](./img/TCP3151-Lec5-named-template-example.png)
-> Example 1
 
 ![Example of Named Template 3](./img/TCP3151-Lec5-named-template-example2.png)
-> Example 2
 
 `<xsl:call-template>` invokes a named template in a script.
 >The name attribute is required and it defines the name of the template being called.
@@ -77,3 +78,35 @@ The basics of XSLT is to create templates that match the nodes in the structure.
 
 `<xsl:sort>` element sort elements in a variety of ways.
 > the default for the sort elements is to sort **alphabetically**
+
+`<xsl:if>` element is used for conditional processing.
+> The instruction inside the `<xsl:if>` element are processed if the condition is true.
+
++ The condition appears as the value of the test attribute.
+```xml
+<xsl:template match="shop">
+<xsl:if test="state = 'Melaka'">
+...
+</xsl:if>
+</xsl:template>
+```
+
+```xml
+<xsl:template match="shop">
+<xsl:if test="price &gt; 10">
+...
+</xsl:if>
+</xsl:template>
+```
+
+![Conditional Expressions](./img/TCP3151-Lec5-named-template-conditional-expression.png)
+
+`<xsl:choose>` element is used in conjunction with `<xsl:when>` and `<xsl:otherwise>` to express test with multiple conditions.
+
+#### Count Function
+
+`count()` is the predefined function in XLST.
+ + returns the total number of input nodes in a sequence
+ + can be used to count elements with specific attribute names defined in the XML document.
+
+![](./img/TCP3151-Lec5-count-function-example.png)
