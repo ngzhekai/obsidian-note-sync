@@ -52,6 +52,7 @@ The basics of XSLT is to create templates that match the nodes in the structure.
 `<xsl:attribute>` create an attribute node in the output document.
 
 `<xsl:variable>` element declare a local or global variable.
+
 `<xsl:value-of>` extracts the value of a selected node through the XPath expression.
 
 ## Named Template
