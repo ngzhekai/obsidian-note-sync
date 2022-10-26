@@ -45,6 +45,8 @@ The basics of XSLT is to create templates that match the nodes in the structure.
 
 + The match attribute specifies which node the template should be invoked.
 
+![Example of Match Template](./img/TCP3151-Lec5-matched-template-example.png)
+
 `<xsl:element>` create an element node in the output document.
 `<xsl:attribute>` create an attribute node in the output document.
 `<xsl:variable>` element declare a local or global variable.
