@@ -61,7 +61,7 @@ The basics of XSLT is to create templates that match the nodes in the structure.
 </xsl:template>
 ```
 
-![](./img/TCP3151-Lec5-named-template-example.png)
+![Example of Named Template](./img/TCP3151-Lec5-named-template-example.png)
 
 `<xsl:call-template>` invokes a named template in a script.
 >The name attribute is required and it defines the name of the template being called.
