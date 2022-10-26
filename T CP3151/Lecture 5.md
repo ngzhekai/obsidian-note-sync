@@ -6,10 +6,17 @@ The basics of XSLT is to create templates that match the nodes in the structure.
 + When a matching template is found, the contents of that template are evaluated.
 
 ### Two type of templates:
+
  + Match (Unnamed) Templates
  + Named Templates
 
 `<xsl:template>` is used to build a template
+
+`<xsl:apply-templates>` applies a template rule to the current element or to the current element's child nodes.
++ the *select attribute* traverses the *node that matches XPath expression*
++ If select attribute is not provided, it traverses all children of the context node
+> If select attribute is included, but does not match any nodes, nothing is traversed and nothing happens.
+
 
 ## Match (Unnamed) Templates
 
