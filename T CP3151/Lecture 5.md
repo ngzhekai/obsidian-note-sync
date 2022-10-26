@@ -63,6 +63,7 @@ The basics of XSLT is to create templates that match the nodes in the structure.
 
 ![Example of Named Template](./img/TCP3151-Lec5-named-template-example.png)
 > Example 1
+
 ![Example of Named Template 3](./img/TCP3151-Lec5-named-template-example2.png)
 > Example 2
 
@@ -71,3 +72,5 @@ The basics of XSLT is to create templates that match the nodes in the structure.
 
 `<xsl:with-param>` pass arguments into the template.
 > The value of the name attribute must match the parameter defined in the actual template; otherwise the parameter is ignored.
+
+`xsl:for-each` element loops over all the nodes in the nodelist of the XPath expression that appears as the value of the select attribute.
