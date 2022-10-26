@@ -73,4 +73,7 @@ The basics of XSLT is to create templates that match the nodes in the structure.
 `<xsl:with-param>` pass arguments into the template.
 > The value of the name attribute must match the parameter defined in the actual template; otherwise the parameter is ignored.
 
-`xsl:for-each` element loops over all the nodes in the nodelist of the XPath expression that appears as the value of the select attribute.
+`<xsl:for-each>` element loops over all the nodes in the nodelist of the XPath expression that appears as the value of the select attribute.
+
+`<xsl:sort>` element sort elements in a variety of ways.
+> the default for the sort elements is to sort **alphabetically**
