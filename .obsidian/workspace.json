@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "7694569a5c43f3c3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "T CP3151/Lecture 5.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -86,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "T AC3121/Lecture 1.md",
+                "file": "T CP3151/Lecture 5.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "T AC3121/Lecture 1.md",
+                "file": "T CP3151/Lecture 5.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "T AC3121/Lecture 1.md"
+                "file": "T CP3151/Lecture 5.md"
               }
             }
           }
@@ -140,17 +153,17 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "4a7b77bfc062de24",
+  "active": "7694569a5c43f3c3",
   "lastOpenFiles": [
+    "T CP3151/Lecture 1.md",
+    "T CP3151/Lecture 5.md",
     "T AC3121/Lecture 1.md",
     "T CC3141/Lecture 2.md",
     "T CC3141/Lecture 1.md",
     "T AC3121/Lecture 2.md",
     "T NS3131/Lecture 2.md",
-    "T CP3151/Lecture 1.md",
     "conflict-files-obsidian-git.md",
     "testing.md",
-    "T CC3141/Lab 1.md",
-    "T CC3141/img/TCC3141-Lec1-cloud-service-models.png"
+    "T CC3141/Lab 1.md"
   ]
 }
