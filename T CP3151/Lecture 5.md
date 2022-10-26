@@ -42,4 +42,27 @@ The basics of XSLT is to create templates that match the nodes in the structure.
 
 ## Named Template
 
-Named templates operate like functions in traditional programming languages.
+**Named templates** operate like functions in traditional programming languages.
+
++ accept arguments and run only when explicitly called
++ `<xsl:param>` is used to define a parameter in a template
+```xml
+<xsl:param name="parameter" select="default value">
+```
+
+### Example of Named Template
+
+```xml
+<xsl:template name="my-template">
+<xsl:param name="a" select="'false'"/>
+<xsl:param name="b" select="book"/>
+<xsl:param name="c"/>
+<!-- ... body of the template ... -->
+</xsl:template>
+```
+
+`<xsl:call-template>` invokes a named template in a script.
+>The name attribute is required and it defines the name of the template being called.
+
+`<xsl:with-param>` pass arguments into the template.
+> The value of the name attribute must match the parameter defined in the actual template; otherwise the parameter is ignored.
