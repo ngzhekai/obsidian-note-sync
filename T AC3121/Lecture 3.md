@@ -1,6 +1,6 @@
 # Chapter 3: Classical Ciphers
 
-## 2 Main Categories of Classical Ciphers:
+2 Main Categories of Classical Ciphers:
 
 | No. | Term | Definition |
 | :--- | :--- | :--- |
