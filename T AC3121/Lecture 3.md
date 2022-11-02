@@ -10,11 +10,20 @@
 | 2. | **Transposition** | Letters are arranged in a different order |
 |||
 
-#### Comparison between *Mono-alphabetic* and *Poly-alphabetic* Ciphers:
+Comparison between *Mono-alphabetic* and *Poly-alphabetic* Ciphers:
 
-| **Monoalphabetic Cipher** | **Polyalphabetic Cipher** |
-| :--- | :--- |
-| Monoalphabetic cipher is one where each symbol in plain text is mapped to a fixed symbol in cipher text. | Polyalphabetic cipher is any cipher based on *substitution*, using multiple substitution alphabets.|
+| | **Monoalphabetic Cipher** | **Polyalphabetic Cipher** |
+| :--- | :--- | :--- |
+| Definition |Monoalphabetic cipher is one where each symbol in plain text is mapped to a fixed symbol in cipher text. | Polyalphabetic cipher is any cipher based on *substitution*, using multiple substitution alphabets.|
+| Relationship (Plaintext to Ciphertext) |One-to-One | One-to-Many |
+| Mapping | Onto a unique alphabetic character of a cipher text | Onto 'm' alphabetic characters of a cipher text |
+| Examples are | additive, Caesar-shift cipher and monoalphabetic substitution cipher.| Autokey, Playfair, Vigenere, Hill, one-time pad, etc.|
+|||
+| Simple? | It is a simple substitution cipher. | It is multiple substitutions cipher. |
+| Strength? |  Monoalphabetic ciphers are not that strong as compared to polyalphabetic cipher. | Polyalphabetic ciphers are much stronger. |
+|||
+| Dependency | A stream cipher is a monoalphabetic cipher if the value of key does not depend on the position of the plain text character in the plain text stream. | A stream cipher is a polyalphabetic cipher if the value of key does depend on the position of the plain text character in the plain text stream. |
+|||
 
 List of *Classical Ciphers*:
 
@@ -26,7 +35,7 @@ List of *Classical Ciphers*:
 + Autokey Cipher
 + Vernam Cipher
 + One-Time Pad
-+ Tranposition Ciphers (Permutation Ciphers)
++ Transposition Ciphers (Permutation Ciphers)
 + Rail Fence Cipher
 + ROW Transposition Ciphers
 + BLOCK / COLUMNAR Transposition Ciphers
