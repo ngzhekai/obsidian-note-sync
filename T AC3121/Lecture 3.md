@@ -9,7 +9,7 @@
 | 2. | **Transposition** | Letters are arranged in a different order |
 ||||
 
-List of Classical Ciphers:
+List of *Classical Ciphers*:
 
 + Caesar Cipher
 + Playfair Cipher

@@ -30,16 +30,6 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "bb94ae3f12b852d1",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.0.3"
-              }
-            }
           }
         ],
         "currentTab": 1
@@ -162,11 +152,11 @@
   },
   "active": "6cc32f9884944e4e",
   "lastOpenFiles": [
+    "T AC3121/Lecture 3.md",
     "T NS3131/Lecture 2.md",
     "T CP3151/Lecture 5.md",
     "T CP3151/img/TCP3151-Lec1-native-and-hybrid-comparison.png",
     "T CC3141/Lecture 1.md",
-    "T AC3121/Lecture 3.md",
     "T AC3121/Lecture 2.md",
     "T NS3131/Lecture 5.md",
     "T CP3151/img/TCP3151-Lec5-matched-template-example.png",
