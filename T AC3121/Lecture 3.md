@@ -12,4 +12,15 @@
 List of Classical Ciphers:
 
 + Caesar Cipher
-+ 
++ Playfair Cipher
++ Hill Cipher
++ Polyalphabetic Substitution Ciphers
++ Vigenere Cipher (multiple Caesar Ciphers)
++ Autokey Cipher
++ Vernam Cipher
++ One-Time Pad
++ Tranposition Ciphers (Permutation Ciphers)
++ Rail Fence Cipher
++ ROW Transposition Ciphers
++ BLOCK / COLUMNAR Transposition Ciphers
++ Product Ciphers
