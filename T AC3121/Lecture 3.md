@@ -3,7 +3,8 @@
 ## 2 Main Categories of Classical Ciphers:
 
 | No. | Term | Definition |
-| :--- | :--- | --- |
+| :--- | :--- | :--- |
+||||
 | 1. | **Substitution** | Letters are replaced by other letters, categorized as mono-alphabetic or poly-alphabetic |
 ||||
 | 2. | **Transposition** | Letters are arranged in a different order |
