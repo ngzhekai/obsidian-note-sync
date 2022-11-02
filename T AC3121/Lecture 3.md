@@ -9,6 +9,13 @@
 | 2. | **Transposition** | Letters are arranged in a different order |
 ||||
 
+
+## Comparison between Mono alphabetic and Poly alphabetic Ciphers
+
+| **Monoalphabetic Cipher** | **Polyalphabetic Cipher** |
+| :--- | :--- |
+| Monoalphabetic cipher is one where each symbol in plain text is mapped to a fixed symbol in cipher text. | Polyalphabetic cipher is any cipher based on *substitution*, using multiple substitution alphabets.|
+
 List of *Classical Ciphers*:
 
 + Caesar Cipher
