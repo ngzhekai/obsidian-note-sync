@@ -1,6 +1,6 @@
 # Chapter 3: Classical Ciphers
 
-2 Main Categories of Classical Ciphers:
+ 2 Main Categories of Classical Ciphers:
 
 | No. | Term | Definition |
 | :--- | :--- | :--- |
@@ -11,7 +11,7 @@
 |||
 
 
-## Comparison between Mono alphabetic and Poly alphabetic Ciphers
+Comparison between *Mono-alphabetic* and Poly-alphabetic Ciphers:
 
 | **Monoalphabetic Cipher** | **Polyalphabetic Cipher** |
 | :--- | :--- |
