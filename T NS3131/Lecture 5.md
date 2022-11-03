@@ -31,6 +31,7 @@ Both the encrypted entities (encrypted compress message and encrypted session ke
 
 ### Secure/Multipurpose Internet Mail Extension (S/MIME)
 
+S/MIME is a security enhancement to the MIME Internet email format standard, based on technology from RSA Data Security.
 
 
 
