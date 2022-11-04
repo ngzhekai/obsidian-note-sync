@@ -33,6 +33,24 @@ Both the encrypted entities (encrypted compress message and encrypted session ke
 
 S/MIME is a security enhancement to the MIME Internet email format standard, based on technology from RSA Data Security.
 
+It offer the ability to sign, encrypt message or both:
+
+| Content Type  | Description 1 | Description 2 | 
+| :--- | :--- | :--- |
+| Enveloped Data | encrypted content and associated keys | an encrypted S/MIME entity, which is a Recipient Info block followed by encrypted message content. |
+| Signed Data | encoded message + signed digest | a signed S/MIME entity, which consists of a series of blocks, including a message digest algorithm identifies, the message being signed, and SignerInfo. |
+| Clear-Signed data | cleartext message + encoded signed digest | Signing process does not involve transforming the message to be signed, so that the message is sent in clear/plaintext.|
+| Registration Request | apply to CA for public key certificate | transfer a certification request to CA (Certificate Authority) | 
+| Certificates-Only Message | A message containing only certificates or a certificate revocation list (CRL) which is sent in response to a registration request. | |
+
+S/MIME follow the following terminology below to specify requirement levels;
+
+| | Requirement Levels of Algorithms Used |
+| --- | --- |
+| MUST | The definition is a **absolute requirement** of the specification. An implementation must include this feature or function to be in conformance with the specification. |
+| SHOULD | There may exist valid reasons in particular circumstances to ignore this feature or function, but it is **recommended** that an implementation include the feature or function. |
+
+
 
 
 
