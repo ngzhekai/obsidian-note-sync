@@ -43,7 +43,7 @@ It offer the ability to sign, encrypt message or both:
 | Registration Request | apply to CA for public key certificate | transfer a certification request to CA (Certificate Authority) | 
 | Certificates-Only Message | A message containing only certificates or a certificate revocation list (CRL) which is sent in response to a registration request. | |
 
-S/MIME follow the following terminology below to specify requirement levels;
+S/MIME follow the following terminology below to specify requirement levels:
 
 | | Requirement Levels of Algorithms Used |
 | --- | --- |
