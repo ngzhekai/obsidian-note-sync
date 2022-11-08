@@ -59,8 +59,6 @@ Have hierarchy with more axioms/laws
 	+ Φ(21) = (3-1)(7-1) = 2 * 6 = 12
 	+ Φ(27) = Φ(3<sup>3</sup>) = 3<sup>3</sup> - 3<sup>2</sup> = 18
 
-
-
 ### Euler's Theorem
 
 
