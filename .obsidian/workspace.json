@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "T AC3121/Lecture 1.md",
+                "file": "T AC3121/Lecture 2.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "3a4452d972b1952e",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "T AC3121/Lecture 1.md",
+                "file": "T AC3121/Lecture 2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "T AC3121/Lecture 1.md",
+                "file": "T AC3121/Lecture 2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "T AC3121/Lecture 1.md"
+                "file": "T AC3121/Lecture 2.md"
               }
             }
           }
@@ -139,15 +138,15 @@
   },
   "active": "7cdf526dfd3c6387",
   "lastOpenFiles": [
+    "T NS3131/Lecture 2.md",
+    "T CP3151/Lecture 1.md",
+    "T CC3141/Lecture 1.md",
+    "T AC3121/Lecture 2.md",
     "T AC3121/Lecture 1.md",
     "T AC3121/Lecture 3.md",
     "T NS3131/Lecture 5.md",
     "T CP3151/Lecture 5.md",
-    "T AC3121/Lecture 2.md",
-    "T NS3131/Lecture 2.md",
     "T CP3151/img/TCP3151-Lec1-native-and-hybrid-comparison.png",
-    "T CC3141/Lecture 1.md",
-    "T CP3151/img/TCP3151-Lec5-matched-template-example.png",
-    "T CP3151/img/TCP3151-Lec5-named-template-conditional-expression.png"
+    "T CP3151/img/TCP3151-Lec5-matched-template-example.png"
   ]
 }

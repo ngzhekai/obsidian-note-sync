@@ -42,3 +42,22 @@ A set of numbers. Having two operations which form:
 
 Have hierarchy with more axioms/laws
 * group -> ring -> field
+
+---
+
+### Euler Totient Function Φ(n)
+
++ This symbol Φ is known as *Phi*
++ To compute Φ(n) need to count number of elements to be excluded
++ In general need prime factorization, but
+	+ for p (p prime)     Φ(p) = p - 1
+	+ for n = p . q (p, q prime) Φ(n) = Φ(p.q) = (p-1)(q-1)
+	+ Φ(p<sup>e</sup>) = p<sup>e</sup> - p<sup>e-1</sup>
+	+ By convention, Φ(1) = 1
++ E.g.
+	+ Φ(37) = 36
+	+ Φ(21) = (3-1)(7-1) = 2 * 6 = 12
+	+ Φ(27) = Φ(3<sup>3</sup>) = 3<sup>3</sup> - 3<sup>2</sup> = 18
+
+![](./img/TAC3121-Lec2-euler-totient-func.png)
+
