@@ -6,7 +6,7 @@
 
 | Term | Definition |
 | :---- | :--------- |
-| Cryptology | The field of both cryptography and cryptanalysis. |
+| Cryptology | The study of secure communication, which surrounds both Cryptography and Cryptanalysis. |
 | Cryptography | The study of encryption (including decryption) principles/methods that allows only the sender and intended recipient of a message to view its contents.|
 | Cryptanalysis | The study of principles/methods of decrypting cipher text without knowing the key (often used by the attacker) |
 |||
@@ -56,7 +56,7 @@
 - Therefore the `Sender` who encrypt messages or verify signatures **cannot** decrypt messages or create signatures.
 + Developed to address two key issues: 
 	+ Key distribution - how to have secure communications in general without having to trust a key distribution center (KDC) with your key.
-	+ Digital signatures - how to verify a message comes intact from the claimed sender
+	+ Digital signatures - how to verify a message comes intact from the claimed sender.
 + Invention due to *Whitfield Diffie & Martin Hellman* at Stanford University in 1976.
 
 ### Public-Key Encryption Model
