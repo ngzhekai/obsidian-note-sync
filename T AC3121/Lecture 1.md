@@ -69,7 +69,7 @@
 
 #### Brute Force Search
 + Try every possible key on a piece of ciphertext until an intelligible translation into plaintext is obtained.
-+ + On average, half of all possible keys must be tried to achieve success.
++ On average, half of all possible keys must be tried to achieve success.
 	+ Always possible to simple try every key
 	+ Most basic attack, proportional to key size
 	+ Assume either know/recognize plaintext
