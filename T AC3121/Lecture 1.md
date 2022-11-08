@@ -26,10 +26,10 @@
 
 | Term | Description |
 | :--- | :---------- |
-|  Ciphertext only | Only know algorithm & ciphertext, is statistical, know or can identify plaintext |
+|  Ciphertext only (COA) | Only know algorithm & ciphertext, is statistical, know or can identify plaintext |
 | Known plaintext (KPA) | Know/suspect plaintext & ciphertext to attack cipher based on some plaintext-ciphertext combinations have been known in the past. |
-| Chosen plaintext | Select plaintext and obtain ciphertext to attack cipher |
-| Chosen ciphertext | Select ciphertext and obtain plaintext to attack cipher |
+| Chosen plaintext (CPA) | Select plaintext and obtain ciphertext to attack cipher. The attacker has access to the encryption machine. |
+| Chosen ciphertext | Select ciphertext and obtain plaintext to attack cipher. The attacker has access to decryption machine. |
 | Chosen text | Select plaintext or ciphertext to en/decrypt to attack cipher |
 
 ## Kerckhoffs' Principle
@@ -67,6 +67,11 @@
 ### Computational Secure Cipher
 > Given that the current computing resources (which are limited), the ciphertext cannot be broken due to the time needed to decrypt the ciphertext outweigh the content of the message.
 
-#### Brute Force Attack
+#### Brute Force Search
 + Try every possible key on a piece of ciphertext until an intelligible translation into plaintext is obtained.
-+ On average, half of all possible keys must be tried to achieve success.
++ + On average, half of all possible keys must be tried to achieve success.
+	+ Always possible to simple try every key
+	+ Most basic attack, proportional to key size
+	+ Assume either know/recognize plaintext
+
+![](./img/TAC3121-Lec1-brute-force-search.png)
