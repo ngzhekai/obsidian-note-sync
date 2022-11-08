@@ -22,10 +22,6 @@
 | Encrypt | the process of converting plaintext to ciphertext |
 | Decrypt | the process of recovering plaintext from ciphertext |
 
-### Cryptanalytic Attacks
-
-
-
 ## Kerckhoffs' Principle
 ![](./img/TAC3121-Lec1-kerchoff-principles.jpg)
 > Everything can be made public (including the algorithms) except the `private key`.
@@ -76,6 +72,7 @@ Given that the current computing resources (which are limited), the ciphertext c
 ### Two general approaches to attacking an encryption scheme
 
 #### Cryptanalytic Attack
+
 | Term | Description |
 | :--- | :---------- |
 |  Ciphertext only (COA) | Only know algorithm & ciphertext, is statistical, know or can identify plaintext |
