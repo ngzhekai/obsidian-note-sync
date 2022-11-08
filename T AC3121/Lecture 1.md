@@ -27,7 +27,7 @@
 | Term | Description |
 | :--- | :---------- |
 |  Ciphertext only | Only know algorithm & ciphertext, is statistical, know or can identify plaintext |
-| Known plaintext | Know/suspect plaintext & ciphertext to attack cipher |
+| Known plaintext (KPA) | Know/suspect plaintext & ciphertext to attack cipher based on some plaintext-ciphertext combinations have been known in the past. |
 | Chosen plaintext | Select plaintext and obtain ciphertext to attack cipher |
 | Chosen ciphertext | Select ciphertext and obtain plaintext to attack cipher |
 | Chosen text | Select plaintext or ciphertext to en/decrypt to attack cipher |
