@@ -54,6 +54,10 @@
 	- public-key - the recipient public key can be known by anyone and is used to encrypt the messages by the sender, and verify signatures.
 	- private-key - only known to the recipient, and is used to decrypt the ciphertext and sign signature.
 - Therefore the `Sender` who encrypt messages or verify signatures **cannot** decrypt messages or create signatures.
++ Developed to address two key issues: 
+	+ Key distribution - how to have secure communications in general without having to trust a key distribution center (KDC) with your key.
+	+ Digital signatures - how to verify a message comes intact from the claimed sender
++ Invention due to *Whitfield Diffie & Martin Hellman* at Stanford University in 1976.
 
 ### Public-Key Encryption Model
 ![](./img/TAC3121-Lec1-public-key-encryption-diagram.png)
