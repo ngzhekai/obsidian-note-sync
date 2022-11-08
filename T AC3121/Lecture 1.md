@@ -67,6 +67,6 @@
 ### Computational Secure Cipher
 > Given that the current computing resources (which are limited), the ciphertext cannot be broken due to the time needed to decrypt the ciphertext outweigh the content of the message.
 
-Brute Force Attack
+#### Brute Force Attack
 + Try every possible key on a piece of ciphertext until an intelligible translation into plaintext is obtained.
 + On average, half of all possible keys must be tried to achieve success.
