@@ -1,11 +1,11 @@
 # Introduction
 
 What is Cryptography?
-
 *"**Crypto algorithms** are the equivalent of locks, seals, security stamps and identification documents on the Internet. They are essential to protect our on-line bank transactions, credit cards, and personal information and to support e-commerce and e-government"*
 
 | Term | Definition |
 | :---- | :--------- |
+| Cryptology | The field of both cryptography and cryptanalysis. |
 | Cryptography | The study of encryption (including decryption) principles/methods that allows only the sender and intended recipient of a message to view its contents.|
 | Cryptanalysis | The study of principles/methods of decrypting cipher text without knowing the key (often used by the attacker) |
 |||
