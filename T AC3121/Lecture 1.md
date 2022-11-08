@@ -69,7 +69,7 @@ Given that the current computing resources (which are limited), the ciphertext c
 
 > An encryption scheme is said to be **computationally secure** if: (1) the cost of breaking the cipher exceeds the value of the encrypted information, and/or (2) the time required to break the cipher exceeds the useful lifetime of the information given limited computing resources (e.g. time needed for breaking a cipher is greater than the age of the universe).
 
-### Two general approaches to attacking an encryption scheme
+### Two general approaches to attacking an encryption scheme:
 
 #### Cryptanalytic Attack
 
