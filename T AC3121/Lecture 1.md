@@ -92,6 +92,7 @@ Given that the current computing resources (which are limited), the ciphertext c
 
 #### Difference between a *block cipher* and a *stream cipher*?
 
-+ Block cipher processes messages in blocks such as 64 bits or more at a time, each of which is encrypted / decrypted.
-+ On the contrary, the Stream cipher process message 1 bit / byte (as a stream) at a time when encrypting and decrypting.
-+ Summary: A block cipher is one in which a block of plaintext is treated as a whole and used to produce a ciphertext block of equal length while a stream cipher is one that encrypts a digital data stream one bit or one byte at a time.
++ **Block cipher** processes messages in blocks such as 64 bits or more at a time, each of which is encrypted / decrypted.
++ On the contrary, the **Stream cipher** process message 1 bit / byte (as a stream) at a time when encrypting and decrypting.
++ In summary: A **block cipher** is one in which a block of plaintext is treated as a whole and used to produce a ciphertext block of equal length while a **stream cipher** is one that encrypts a digital data stream one bit or one byte at a time.
+
