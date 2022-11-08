@@ -61,4 +61,13 @@ Have hierarchy with more axioms/laws
 
 ### Euler's Theorem
 
++ A generalization of Fermat's Theorem
++ a<sup>Φ(n)</sup> mod n = 1
+	+ where GCD(a, n) = 1
++ E.g.
+	+ a=3; n=10; Φ(10) = 4;
+	 hence 3<sup>4</sup> = 81 = 1 mod 10
+	 + a=2; n=11; Φ(11) = 10;
+	 hence 2<sup>10</sup> = 1024 = 1 mod 11
+
 
