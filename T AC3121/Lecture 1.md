@@ -78,7 +78,7 @@
 
 ### Computational Secure Cipher
 
-> Given that the current computing resources (which are limited), the ciphertext cannot be broken due to the time needed to decrypt the ciphertext outweigh the content of the message.
+Given that the current computing resources (which are limited), the ciphertext cannot be broken due to the time needed to decrypt the ciphertext outweigh the content of the message.
 
 > An encryption scheme is said to be **computationally secure** if: (1) the cost of breaking the cipher exceeds the value of the encrypted information, and/or (2) the time required to break the cipher exceeds the useful lifetime of the information given limited computing resources (e.g. time needed for breaking a cipher is greater than the age of the universe).
 
