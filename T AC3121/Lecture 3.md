@@ -10,7 +10,7 @@
 | 2. | **Transposition** | Letters are arranged in a different order |
 |||
 
-Comparison between *Mono-alphabetic* and *Poly-alphabetic* SubstituCiphers:
+Comparison between *Mono-alphabetic* and *Poly-alphabetic* Substitution Ciphers:
 
 | | **Monoalphabetic Cipher** | **Polyalphabetic Cipher** |
 | :--- | :--- | :--- |
@@ -84,7 +84,6 @@ List of *Classical Ciphers*:
 + Autokey Cipher
 + Vernam Cipher
 + One-Time Pad
-
 
 #### The Vigenère Tableu
 
