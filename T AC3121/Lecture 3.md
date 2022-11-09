@@ -45,9 +45,11 @@ List of *Classical Ciphers*:
 
 ### Monoalphabetic Substitution Cipher
 + Caesar Cipher
++ Playfair Cipher
++ Hill Cipher
 
 
-### Caesar Cipher
+#### Caesar Cipher
 + Only have 25 possible ciphers (A maps to B, ..., Z)
 + 
 + Encryption:
@@ -58,4 +60,16 @@ List of *Classical Ciphers*:
 
 > `C` stands for Ciphertext, `P` stands for Plaintext, `k` stands for key
 
-### Playfair Cipher
+#### Playfair Cipher
++ Security much improved over monoalphabetic
++
+
+### Polyalphabetic Substitution
++ Vigenère Cipher
+
+
+#### The Vigenère Tableu
+
+![Image.](https://pages.mtu.edu/~shene/NSF-4/Tutorial/VIG/FIG-VIG-Table.jpg)
+
+
