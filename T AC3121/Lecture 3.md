@@ -32,7 +32,6 @@ List of *Classical Ciphers*:
 + Caesar Cipher
 + Playfair Cipher
 + Hill Cipher
-+ Polyalphabetic Substitution Ciphers
 + Vigenere Cipher (multiple Caesar Ciphers)
 + Autokey Cipher
 + Vernam Cipher
@@ -51,7 +50,7 @@ List of *Classical Ciphers*:
 
 #### Caesar Cipher
 + Only have 25 possible ciphers (A maps to B, ..., Z)
-+ 
++ Could simply try each in turn (brute force search / exhaustive key search)
 + Encryption:
 	+ *C* = E<sub>k</sub>(*P*) = *P* + *k* (mod 26)
 
@@ -75,8 +74,12 @@ List of *Classical Ciphers*:
 
 ![Image.](https://pages.mtu.edu/~shene/NSF-4/Tutorial/VIG/FIG-VIG-Table.jpg)
 
+### Transposition Cipher
++ Considers as classical transposition or permutation ciphers.
++ Hide the plaintext by rearranging the letter order, without having to alter the actual letters used
 
-### Transposition Cipher (Permutation)
+#### Examples of Transposition Cipher (Permutation)
++ Geometric Figure
 + Rail Fence Cipher
 + ROW Transposition Cipher
 + BLOCK /COLUMNAR Transposition Cipher
