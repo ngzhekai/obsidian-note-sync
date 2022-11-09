@@ -64,7 +64,20 @@ List of *Classical Ciphers*:
 + Security much improved over monoalphabetic
 + Playfair Key Matrix
 	+ A `5 x 5`  matrix of letters based on a keyword
-	+ 
+	+ Fill in letters of keyword (minus duplicates)
+	+ Fill rest of matrix with other letters
+	+ E.g. using the keyword MONARCHY
+
+| | |
+|---|---|---|---|---|
+| **M** | **O** | **N** | **A** | **R** |
+| **C** | **H** | **Y** | B | D |
+| E | F | G | I/J | K |
+| L | P | Q | S | T |
+| U | V | W | X | Z |
+|||
+> Playfair Key Matrix (5 x 5)
+
 
 ### Polyalphabetic Substitution Cipher
 + Vigenère Cipher
