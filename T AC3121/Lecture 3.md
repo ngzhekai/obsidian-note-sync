@@ -68,7 +68,7 @@ List of *Classical Ciphers*:
 	+ Fill rest of matrix with other letters
 	+ E.g. using the keyword MONARCHY
 
-| | |
+| | | | | |
 |---|---|---|---|---|
 | **M** | **O** | **N** | **A** | **R** |
 | **C** | **H** | **Y** | B | D |
