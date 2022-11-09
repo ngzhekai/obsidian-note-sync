@@ -64,8 +64,11 @@ List of *Classical Ciphers*:
 + Security much improved over monoalphabetic
 +
 
-### Polyalphabetic Substitution
+### Polyalphabetic Substitution Cipher
 + Vigenère Cipher
++ Autokey Cipher
++ Vernam Cipher
++ One-Time Pad
 
 
 #### The Vigenère Tableu
@@ -73,3 +76,7 @@ List of *Classical Ciphers*:
 ![Image.](https://pages.mtu.edu/~shene/NSF-4/Tutorial/VIG/FIG-VIG-Table.jpg)
 
 
+### Transposition Cipher (Permutation)
++ Rail Fence Cipher
++ ROW Transposition Cipher
++ BLOCK /COLUMNAR Transposition Cipher
