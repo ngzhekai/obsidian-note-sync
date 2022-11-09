@@ -60,8 +60,11 @@ List of *Classical Ciphers*:
 > `C` stands for Ciphertext, `P` stands for Plaintext, `k` stands for key
 
 #### Playfair Cipher
++ Encrypt multiple letters
 + Security much improved over monoalphabetic
-+
++ Playfair Key Matrix
+	+ A `5 x 5`  matrix of letters based on a keyword
+	+ 
 
 ### Polyalphabetic Substitution Cipher
 + Vigenère Cipher
