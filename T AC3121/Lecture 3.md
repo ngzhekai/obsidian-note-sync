@@ -42,3 +42,18 @@ List of *Classical Ciphers*:
 + ROW Transposition Ciphers
 + BLOCK / COLUMNAR Transposition Ciphers
 + Product Ciphers
+
+##### Monoalphabetic Substitution Cipher
++ Caesar Cipher
+
+
+#### Caesar Cipher
++ Only have 25 possible ciphers (A maps to B, ..., Z)
++ 
++ Encryption:
+	+ *C* = E<sub>k</sub>(*P*) = *P* + *k* (mod 26)
+
++ Decryption:
+	+ *P* = D<sub>k</sub>(*C*) = *C* + *k* (mod 26)
+
+> `C` stands for Ciphertext, `P` stands for Plaintext, `k` stands for key
