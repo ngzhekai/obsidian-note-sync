@@ -10,7 +10,7 @@
 | 2. | **Transposition** | Letters are arranged in a different order |
 |||
 
-Comparison between *Mono-alphabetic* and *Poly-alphabetic* Ciphers:
+Comparison between *Mono-alphabetic* and *Poly-alphabetic* SubstituCiphers:
 
 | | **Monoalphabetic Cipher** | **Polyalphabetic Cipher** |
 | :--- | :--- | :--- |
