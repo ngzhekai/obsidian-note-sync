@@ -52,10 +52,10 @@
 + Invention due to *Whitfield Diffie & Martin Hellman* at Stanford University in 1976.
 
 ### Public-Key Encryption Model
-![](./img/TAC3121-Lec1-public-key-encryption-diagram.png)
+![](https://raw.githubusercontent.com/ngzhekai/obsidian-note-sync/main/T%20AC3121/img/TAC3121-Lec1-public-key-encryption-diagram.png)
 
 ### Authentication using Public-Key System (Digital Signature) 
-![](./img/TAC3121-Lec1-authentication-using-public-key-system-diagram.png)
+![](https://raw.githubusercontent.com/ngzhekai/obsidian-note-sync/main/T%20AC3121/img/TAC3121-Lec1-authentication-using-public-key-system-diagram.png)
 
 ### Unconditional Secure Cipher
 
@@ -88,7 +88,7 @@ Given that the current computing resources (which are limited), the ciphertext c
 	+ Most basic attack, proportional to key size
 	+ Assume either know/recognize plaintext
 
-![](./img/TAC3121-Lec1-brute-force-search.png)
+![](https://raw.githubusercontent.com/ngzhekai/obsidian-note-sync/main/T%20AC3121/img/TAC3121-Lec1-brute-force-search.png)
 
 #### Difference between a *block cipher* and a *stream cipher*?
 
