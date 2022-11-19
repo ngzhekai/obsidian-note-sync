@@ -39,7 +39,7 @@
 - think of it like a traditional house door key, to unlock/lock it requires the common key.
 
 ### Private-Key Encryption Model
-![](./img/TAC3121-Lec1-private-key-encryption-diagram-2.png)
+![Private-Key](https://raw.githubusercontent.com/ngzhekai/obsidian-note-sync/main/T%20AC3121/img/TAC3121-Lec1-private-key-encryption-diagram-2.png)
 
 #### Asymmetric Cryptography (Public-Key)
 - Involves the use of two keys:
