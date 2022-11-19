@@ -23,7 +23,7 @@
 | Decrypt | the process of recovering plaintext from ciphertext |
 
 ## Kerckhoffs' Principle
-![](./img/TAC3121-Lec1-kerchoff-principles.jpg)
+![Kerckhoffs Principle](./img/TAC3121-Lec1-kerchoff-principles.jpg)
 > Everything can be made public (including the algorithms) except the `private key`.
 
 ---
