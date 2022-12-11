@@ -132,3 +132,37 @@ In the **AAA framework**:
 5. The authentication server returns the success or failure of the authentication to the remote access server (NAS).
 
 6. If the authentication succeeded, the remote access server (NAS) allows the client to access the network.
+
+---
+
+### DIAMETER
+
+- Derived from RADIUS
+
+- RFC3588 AND RFC4005
+
+- Additional enhancements:
+
+	- Error Handling
+
+	- Message Delivery Reliability
+
+- Peer-to-peer architecture
+
+- Every host/node that implements the Diameter protocol can act as a client or server
+
+- A Diameter node refers to a Diameter client, a Diameter server or a Diameter agent.
+
+#### Comparison of DIAMETER and RADIUS Protocols
+
+| | DIAMETER | RADIUS |
+| --- | --- | --- |
+| Transportation Protocol | Connection-Oriented Protocols (TCP - Transmission Control Protocol) and (SCTP - Stream Control Transmission Protocol) | Connectionless Protocol (UDP - User Datagram Protocol) |
+| Security | Hop-to-Hop, End-to-End | Hop-to-Hop |
+| Agent Support | Relay, Proxy, Redirect, Translation | Implicit support, which means the agent behaviors might be implemented in a RADIUS server |
+| Capabilities Negotiation | Negotiate supported applications and security level | Don't support | 
+| Peer Discovery | Static configuration and dynamic lookup | Static configuration |
+| Server Initiated Message | Supported. for example, re-authentication message, Session termination | Don't support |
+| Error Handling | Protocol Errors and Application Errors | Don't support |
+| Maximum Attribute Data Size | 16,777,215 octets | 255 octets |
+
