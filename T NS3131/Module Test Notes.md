@@ -57,7 +57,7 @@
 	+ involves validating the end users' identity prior to permitting them network access.
 	+ this process key on the notion that the end-user possesses a unique piece of information
 
-		>a username / password combination, a secret key, or perhaps bio metric data (fingerprints, for example) -- that serves as unambiguous identification credentials.
+		> a username / password combination, a secret key, or perhaps bio metric data (fingerprints, for example) -- that serves as unambiguous identification credentials.
 
 	+ The AAA server compares the user-supplied authentication data with the user-associated data stored in its database, and if the credentials match, the user is granted with the network access.
 + Authorization
