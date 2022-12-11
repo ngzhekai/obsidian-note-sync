@@ -69,8 +69,40 @@
 
 	+ this might include providing an IP address, invoking a filter to determine which applications or protocols are supported, and so on.
 
-> Authentication and authorization are usually performed together in an AAA-managed environment.
+	+ Authentication and authorization are usually performed together in an AAA-managed environment.
 
 + Accounting
 
 	+ provides the methodology for collecting information about the end user's resource consumption, which can then be processed for billing, auditing, and capacity-planning purposes.
+
+### AAA Processing
+
+- End user connects to the point-of-entry device and requests access to the network.
+- NAS (Network Access Server) AAA client function collects and forwards the end user's credentials to the AAA server.
+- AAA server processes the data and returns an accept or reject response and other relevant data to the AA client.
+- AAA client on the NAS (Network Access Server) notifies the end user that access is granted or denied for the specified resources.
+
+![AAA Framework](https://download.huawei.com/mdl/image/download?uuid=73578bb25fee4af69890b3c4d9af2b89)
+
+> AAA Framework
+
+As shown in the preceding figure, the basic AAA implementation process is as follows:
+
+-  The user established a connection with the `AAA client` before accessing the `network`.
+
+- The `AAA client` sends the user's authentication credential to the `AAA server`.
+
+- The `AAA server` authenticates and authorizes the user based on the user's authentication credentials and returns the authentication and authorization results to the `AAA client`.
+
+- The `AAA client` determines whether to allow the user to access the network based on the received authentication and authorization results.
+
+In the **AAA framework**:
+
+- The `AAA client` runs on a `network access server (NAS)` , which can be a router or switch that provides network access services for `users`.
+
+- The `AAA server` is responsible for `user authentication`, `authorization`, and `accounting`, as well as **centralized user information management**. Depending on the communication protocols used in `AAA`, `AAA servers` are classified into `Remote Authentication Dial-in Service (RADIUS)` server and `Terminal Access Controller Access Control System (TACACS)` server.
+
+
+![Overview of AAA and User Management](https://download.huawei.com/mdl/image/download?uuid=672a9a06fb9c419eb02f1ce483be90fb)
+
+> The AAA processing illustrated by Huawei
