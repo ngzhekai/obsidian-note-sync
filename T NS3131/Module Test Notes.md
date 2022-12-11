@@ -106,3 +106,11 @@ In the **AAA framework**:
 ![Overview of AAA and User Management](https://download.huawei.com/mdl/image/download?uuid=672a9a06fb9c419eb02f1ce483be90fb)
 
 > Overview of AAA and User Management illustrated by [Huawei](https://info.support.huawei.com/info-finder/encyclopedia/en/AAA.html)
+
+---
+
+### RADIUS (REMOTE ACCESS DIAL-In USER SERVICE)
+
+- Best-known and most widely deployed AAA protocol
+- Developed in the mid-1990s by `Livingston Enterprises` (since acquired by Lucent) to provide `authentication` and `accounting` services to their `NAS (Network Access Server)` devices.
+- RFC 2138, RFC 2139, RFC 2865, 2866 and 2869
