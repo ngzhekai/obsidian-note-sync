@@ -41,3 +41,10 @@
 1. Encryption/decryption (provide secrecy)
 2. Digital signatures (provide authentication)
 3. Key exchange (of session keys)
+
+### Different ways of distributing public keys
+
+1. Public announcement
+2. Public available directory
+3. Public-key authority
+4. Publi
