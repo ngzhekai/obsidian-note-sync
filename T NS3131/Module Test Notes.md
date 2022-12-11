@@ -166,3 +166,20 @@ In the **AAA framework**:
 | Error Handling | Protocol Errors and Application Errors | Don't support |
 | Maximum Attribute Data Size | 16,777,215 octets | 255 octets |
 
+---
+
+### Pretty Good Privacy (PGP)
+
+- A popular program used to **encrypt and decrypt** email over the Internet, as well as **authenticate messages with digital signattures and encrypted stored files**
+- Previously available as freeware and now only available as a low-cost commercial version
+- Developed by `Philip R. Zimmermann` in 1991
+- Has become a de facto standard for email security
+
+#### Consist of five services:
+
+1. Authentication
+2. Confidentiality
+3. Compression
+4. E-mail compatibility
+5. Segmentation
+
