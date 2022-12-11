@@ -114,3 +114,19 @@ In the **AAA framework**:
 - Best-known and most widely deployed AAA protocol
 - Developed in the mid-1990s by `Livingston Enterprises` (since acquired by Lucent) to provide `authentication` and `accounting` services to their `NAS (Network Access Server)` devices.
 - RFC 2138, RFC 2139, RFC 2865, 2866 and 2869
+
+![RADIUS Process ](https://github.com/ngzhekai/obsidian-note-sync/blob/main/T%20NS3131/img/moduleTest-radius-diagram.png?raw=true)
+
+#### The process used in centralized authentication:
+
+1. The remote access server (Network Access Server) queries the users for credentials.
+
+2.  The client sends its authentication information.
+
+3. The remote access server (NAS) forwards the authentication information to a central authentication server (AAA Server).
+
+4. The central authentication server (AAA Server) checks the user's credentials against a user account database, such as the `Active Directory` directory service, `Novell NetWare eDirectory`, or `UNIX NIS`.
+
+5. The authentication server returns the success or failure of the authentication to the remote access server (NAS).
+
+1. If the authentication succeeded, the remote access server (NAS) allows the client to access the network.
