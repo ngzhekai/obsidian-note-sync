@@ -84,7 +84,7 @@
 
 ![AAA Framework](https://download.huawei.com/mdl/image/download?uuid=73578bb25fee4af69890b3c4d9af2b89)
 
-> AAA Framework
+> AAA Framework shown by [Huawei](https://info.support.huawei.com/info-finder/encyclopedia/en/AAA.html)
 
 As shown in the preceding figure, the basic AAA implementation process is as follows:
 
@@ -105,4 +105,4 @@ In the **AAA framework**:
 
 ![Overview of AAA and User Management](https://download.huawei.com/mdl/image/download?uuid=672a9a06fb9c419eb02f1ce483be90fb)
 
-> The AAA processing illustrated by Huawei
+> Overview of AAA and User Management illustrated by [Huawei](https://info.support.huawei.com/info-finder/encyclopedia/en/AAA.html)
