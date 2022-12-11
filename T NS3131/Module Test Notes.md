@@ -114,6 +114,7 @@ In the **AAA framework**:
 - Best-known and most widely deployed AAA protocol
 
 - Developed in the mid-1990s by `Livingston Enterprises` (since acquired by Lucent) to provide `authentication` and `accounting` services to their `NAS (Network Access Server)` devices.
+
 - RFC 2138, RFC 2139, RFC 2865, 2866 and 2869
 
 ![RADIUS Process ](https://github.com/ngzhekai/obsidian-note-sync/blob/main/T%20NS3131/img/moduleTest-radius-diagram.png?raw=true)
