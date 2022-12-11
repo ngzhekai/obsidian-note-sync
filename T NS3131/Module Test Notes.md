@@ -112,6 +112,7 @@ In the **AAA framework**:
 ### RADIUS (REMOTE ACCESS DIAL-In USER SERVICE)
 
 - Best-known and most widely deployed AAA protocol
+
 - Developed in the mid-1990s by `Livingston Enterprises` (since acquired by Lucent) to provide `authentication` and `accounting` services to their `NAS (Network Access Server)` devices.
 - RFC 2138, RFC 2139, RFC 2865, 2866 and 2869
 
@@ -129,4 +130,4 @@ In the **AAA framework**:
 
 5. The authentication server returns the success or failure of the authentication to the remote access server (NAS).
 
-1. If the authentication succeeded, the remote access server (NAS) allows the client to access the network.
+6. If the authentication succeeded, the remote access server (NAS) allows the client to access the network.
