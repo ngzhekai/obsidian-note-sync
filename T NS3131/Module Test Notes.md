@@ -54,8 +54,9 @@
 ### AAA (Authentication, Authorization and Accounting)
 
 + Authentication
+
 	+ involves validating the end users' identity prior to permitting them network access.
-	
+
 	+ this process key on the notion that the end-user possesses a unique piece of information
 
 	> such as a username / password combination, a secret key, or perhaps bio metric data (fingerprints, for example) -- that serves as unambiguous identification credentials.
@@ -63,6 +64,13 @@
 	+ The AAA server compares the user-supplied authentication data with the user-associated data stored in its database, and if the credentials match, the user is granted with the network access.
 
 + Authorization
+
 	+ defines what rights and services that the end user is allowed to have once network access is granted.
+
+	+ this might include providing an IP address, invoking a filter to determine which applications or protocols are supported, and so on.
+
+> Authentication and authorization are usually performed together in an AAA-managed environment.
+
 + Accounting
+
 	+ provides the methodology for collecting information about the end user's resource consumption, which can then be processed for billing, auditing, and capacity-planning purposes.
