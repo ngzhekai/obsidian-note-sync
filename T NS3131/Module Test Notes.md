@@ -201,7 +201,7 @@ In the **AAA framework**:
 
 ### Process of PGP Authentication
 
-![PGP-Authentication](https://github.com/ngzhekai/obsidian-note-sync/blob/main/T%20NS3131/img/moduleTest-pgp-authentication-only.png?raw=true)
+![PGP-Authentication](https://raw.githubusercontent.com/ngzhekai/obsidian-note-sync/main/T%20NS3131/img/lecture5-pgp-authentication.jpg)
 
 1. The sender creates a message.
 2. SHA-1 is used to generate a 160-bit hash code of the message.
