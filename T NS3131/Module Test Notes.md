@@ -173,7 +173,7 @@ In the **AAA framework**:
 - It has transition support for RADIUS
 - has larger address space for AVPs (Attribute Value Pairs) and identifiers (32-bit instead of 8-bit)
 - it is a client-server protocol, with exception of supporting some server-initiated messages as well
-- both stateful and stateless models can be sued
+- both stateful and stateless models can be used
 - it has dynamic discovery of peers
 - it has capability negotiation
 - it supports application layer acknowledgements
@@ -244,4 +244,4 @@ In the **AAA framework**:
 
 **Link encryption** encrypts all the data along a specific communication path, as in a satellite link, T3 line, or telephone circuit. Not only user information is encrypted, the header, trailers, address and routing data that are part of the packets are also encrypted. Link encryption provides protection against packet sniffers and eavesdropper.
 
-**End-to-end** encryption encrypts only data content. The header, address, routing and trailer information are not encrypted. End-to-end encryption ensures that only the communicating users can read the messages.
+**End-to-end** encryption encrypts only the data content. The header, address, routing and trailer information are not encrypted. End-to-end encryption ensures that only the communicating users can read the messages.
