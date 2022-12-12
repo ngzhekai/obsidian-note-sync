@@ -248,3 +248,13 @@ In the **AAA framework**:
 **Link encryption** encrypts all the data along a specific communication path, as in a satellite link, T3 line, or telephone circuit. Not only user information is encrypted, the header, trailers, address and routing data that are part of the packets are also encrypted. Link encryption provides protection against packet sniffers and eavesdropper.
 
 **End-to-end** encryption encrypts only the data content. The header, address, routing and trailer information are not encrypted. End-to-end encryption ensures that only the communicating users can read the messages.
+
+---
+
+### Three major services provided by AAA Server
+
+- Authentication - involves validating the end users' identity prior to permitting with the network access.
+
+- Authorization - defines what rights and services that the end user is allowed to have once the network access is granted.
+
+- Accounting - provides the methodology for collecting / monitors information about the end user's resource consumption during network access. Which can then be processed for billing, auditing, and capacity-planning purposes.
