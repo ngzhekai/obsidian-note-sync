@@ -237,10 +237,13 @@ In the **AAA framework**:
 	- Encryption occurs independently on every link
 	- Implies must decrypt traffic between links
 	- Requires many devices, but paired keys
+	- Link encryption occurs at layers 1 or 2
 
 2. End-to-end encryption
 	- Encryption occurs between original source and final destination
 	- Need devices at each end with shared keys
+	- End-to-end encryption can occur at layers 3, 4, 6, 7
+	- As moving higher in the OSI model level, less information is encrypted but it is more secure through more complex with more entities an
 
 **Link encryption** encrypts all the data along a specific communication path, as in a satellite link, T3 line, or telephone circuit. Not only user information is encrypted, the header, trailers, address and routing data that are part of the packets are also encrypted. Link encryption provides protection against packet sniffers and eavesdropper.
 
