@@ -117,7 +117,7 @@ In the **AAA framework**:
 
 - RFC 2138, RFC 2139, RFC 2865, 2866 and 2869
 
-![RADIUS Process ](https://github.com/ngzhekai/obsidian-note-sync/blob/main/T%20NS3131/img/moduleTest-radius-diagram.png?raw=true)
+![RADIUS Process ](https://raw.githubusercontent.com/ngzhekai/obsidian-note-sync/main/T%20NS3131/img/moduleTest-radius-diagram.png)
 
 #### The process used in centralized authentication:
 
