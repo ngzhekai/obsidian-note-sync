@@ -206,7 +206,7 @@ In the **AAA framework**:
 1. The sender creates a message.
 2. SHA-1 is used to generate a 160-bit hash code of the message.
 3. The hash code is encrypted with RSA using the sender's private key, and the result is attached to the message.
-4. Ther receiver uses RSA with the sender's public key to decrypt and recover the hash code.
+4. The receiver uses RSA with the sender's public key to decrypt and recover the hash code.
 5. The receiver generates a new hash code for the message and compares it with the decrypted hash code. If the two match, the message is accepted as authentic.
 
 #### Process of PGP Confidentiality
