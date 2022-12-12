@@ -186,7 +186,7 @@ In the **AAA framework**:
 
 ### Pretty Good Privacy (PGP)
 
-- A popular program used to **encrypt and decrypt** email over the Internet, as well as **authenticate messages with digital signattures and encrypted stored files**
+- A popular program used to **encrypt and decrypt** email over the Internet, as well as **authenticate messages with digital signatures and encrypted stored files**
 - Previously available as freeware and now only available as a low-cost commercial version
 - Developed by `Philip R. Zimmermann` in 1991
 - Has become a de facto standard for email security
