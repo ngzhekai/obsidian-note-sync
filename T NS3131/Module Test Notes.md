@@ -191,7 +191,25 @@ In the **AAA framework**:
 2. SHA-1 is used to generate a 160-bit hash code of the message.
 3. The hash code is encrypted with RSA using the sender's private key, and the result is attached to the message.
 4. Ther receiver uses RSA with the sender's public key to decrypt and recover the hash code.
-5. The receiver generates a new has code for the message and compares it with the decrypted hash code. If the two match, the message is accepted as authentic.
+5. The receiver generates a new hash code for the message and compares it with the decrypted hash code. If the two match, the message is accepted as authentic.
 
 #### Process of PGP Confidentiality
+
+![PGP-confidentiality](https://github.com/ngzhekai/obsidian-note-sync/blob/main/T%20NS3131/img/lecture5-pgp-confidentiality.jpg?raw=true)
+
+1. The sender generates a message and a random 128-bit number to be used as a session key for this message only.
+2. The message is encrypted using CAST-128 (or IDEA or 3DES) with the session key.
+3. The session key is encrypted with RSA using the recipient's public key and is attached to the message.
+4. The receiver uses RSA with its private key to decrypt and recover the session key.
+5. The session key is used to decrypt the message.
+
+###3 Summary of PGP Services
+
+| Function | Algorithm Used |
+| --- | --- | 
+| Digital Signature | DSS/SHA or RSA/SHA |
+| Message Encryption | CAST or IDEA or three-key triple DES with Diffie-Hellman or RSA |
+| Compression | ZIP |
+| E-mail compatibility | Radix-64 conversion |
+| Segmentation | - |
 
