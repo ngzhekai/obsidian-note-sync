@@ -166,6 +166,22 @@ In the **AAA framework**:
 | Error Handling | Protocol Errors and Application Errors | Don't support |
 | Maximum Attribute Data Size | 16,777,215 octets | 255 octets |
 
+### Advantage of DIAMETER as compared to RADIUS
+
+- It uses reliable transport protocols (TCP or SCTP, not UDP)
+- It can use tranport level security (IPsec or TLS)
+- It has transition support for RADIUS
+- has larger address space for AVPs (Attribute Value Pairs) and identifiers (32-bit instead of 8-bit)
+- it is a client-server protocol, with exception of supporting some server-initiated messages as well
+- both stateful and stateless models can be sued
+- it has dynamic discovery of peers
+- it has capability negotiation
+- it supports application layer acknowledgements
+- it has error notification
+- it has better roaming support
+- it is more easily extended
+- it has basic support for user-sessions and accounting
+
 ---
 
 ### Pretty Good Privacy (PGP)
@@ -203,7 +219,7 @@ In the **AAA framework**:
 4. The receiver uses RSA with its private key to decrypt and recover the session key.
 5. The session key is used to decrypt the message.
 
-###3 Summary of PGP Services
+#### Summary of PGP Services
 
 | Function | Algorithm Used |
 | --- | --- | 
@@ -213,3 +229,19 @@ In the **AAA framework**:
 | E-mail compatibility | Radix-64 conversion |
 | Segmentation | - |
 
+---
+
+### Placement of Encryption
+
+1. Link encryption
+	- Encryption occurs independently on every link
+	- Implies must decrypt traffic between links
+	- Requires many devices, but paired keys
+
+2. End-to-end encryption
+	- Encryption occurs between original source and final destination
+	- Need devices at each end with shared keys
+
+**Link encryption** encrypts all the data along a specific communication path, as in a satellite link, T3 line, or telephone circuit. Not only user information is encrypted, the header, trailers, address and routing data that are part of the packets are also encrypted. Link encryption provides protection against packet sniffers and eavesdropper.
+
+**End-to-end** encryption encrypts only data content. The header, address, routing and trailer information are not encrypted. End-to-end encryption ensures that only the communicating users can read the messages.
