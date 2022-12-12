@@ -73,7 +73,7 @@
 
 + Accounting
 
-	+ provides the methodology for collecting information about the end user's resource consumption, which can then be processed for billing, auditing, and capacity-planning purposes.
+	+ provides the methodology for collecting/ monitors information about the end user's resource consumption, which can then be processed for billing, auditing, and capacity-planning purposes.
 
 ### AAA Processing
 
@@ -211,7 +211,7 @@ In the **AAA framework**:
 
 #### Process of PGP Confidentiality
 
-![PGP-confidentiality](https://github.com/ngzhekai/obsidian-note-sync/blob/main/T%20NS3131/img/lecture5-pgp-confidentiality.jpg?raw=true)
+![PGP-confidentiality](https://raw.githubusercontent.com/ngzhekai/obsidian-note-sync/main/T%20NS3131/img/lecture5-pgp-confidentiality.jpg)
 
 1. The sender generates a message and a random 128-bit number to be used as a session key for this message only.
 2. The message is encrypted using CAST-128 (or IDEA or 3DES) with the session key.
@@ -243,7 +243,7 @@ In the **AAA framework**:
 	- Encryption occurs between original source and final destination
 	- Need devices at each end with shared keys
 	- End-to-end encryption can occur at layers 3, 4, 6, 7
-	- As moving higher in the OSI model level, less information is encrypted but it is more secure through more complex with more entities an
+	- As moving higher in the OSI model level, less information is encrypted but it is more secure through more complex with more entities and keys.
 
 **Link encryption** encrypts all the data along a specific communication path, as in a satellite link, T3 line, or telephone circuit. Not only user information is encrypted, the header, trailers, address and routing data that are part of the packets are also encrypted. Link encryption provides protection against packet sniffers and eavesdropper.
 
